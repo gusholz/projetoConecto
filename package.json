@@ -1,0 +1,31 @@
+{
+  "name": "projetoconecto",
+  "version": "1.0.0",
+  "description": "Site desenvolvido para o projeto Co.necto, vinculado ao Museu da Imagem e do Som da cidade de Fortaleza",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusholz/projetoConecto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gusholz/projetoConecto/issues"
+  },
+  "homepage": "https://github.com/gusholz/projetoConecto#readme",
+  "dependencies": {
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.0",
+    "@types/react": "18.0.21",
+    "typescript": "4.8.4"
+  }
+}
