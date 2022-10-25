@@ -4,12 +4,11 @@ import Footer from '../src/components/footer/footer';
 import Conteudo from '../src/components/conteudo/conteudo';
 import '@nextcss/reset';
 
-export default function Home(){
+export default function Documentacao(){
     return (
         <div>
             <div className='container'>
                 <Header/>
-                <div>Área Interativa</div>
                 <Conteudo/>
                 <Footer/>
             </div>

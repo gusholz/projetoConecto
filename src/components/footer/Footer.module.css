@@ -1,3 +1,55 @@
+@font-face {
+    font-family: BasisGrotesqueSemiBold;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: BasisGrotesqueRegular;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../../../public/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: latoItalico;
+    src: url(../../../public/fonts/Lato-Italic.ttf);
+}
+
+
+@font-face {
+    font-family: latoBold;
+    src: url(../../../public/fonts/Lato-Bold.ttf);
+}
+
+.container{
+    background-color: #151525;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vw;
+}
+
 .logo{
     width: 5vh;
+}
+
+.infos{
+    color:  #FFFDF3;
+    font-family: LatoBold;
+    font-size: 1vw;
+}
+
+.contato{
+    color:  #FFFDF3;
+    font-family: LatoItalico;   
+    font-size: 1vw;
+}
+
+.copyright{
+    margin-top: 2vw;
+    color:  #FFFDF3;
+    font-family: Lato;   
+    font-size: 0.8vw;
 }

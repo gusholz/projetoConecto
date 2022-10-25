@@ -1,3 +1,48 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFDF3;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
 .logo{
     width: 5vh;
 }
+
+@font-face {
+    font-family: BasisGrotesqueSemiBold;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: BasisGrotesqueRegular;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Regular.ttf);
+}
+
+.titulo{
+    font-family: BasisGrotesqueSemiBold;
+    font-size: 3vw;
+    margin-left: 1vw;
+    color: #151525;
+    
+}
+
+.navMenu{
+    display: flex;
+    list-style:none;
+}
+
+.itemMenu a{
+    text-decoration: none;
+    color: #151525;
+    font-family: BasisGrotesqueRegular;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
