@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8vw;
+    background-color: #FFFDF3;
+}
+
+.titulo{
+    font-size: 6vw;
+    max-width: 30%;
+}
+
+.texto{
+    font-size: 2vw;
+    max-width: 40%;
+}

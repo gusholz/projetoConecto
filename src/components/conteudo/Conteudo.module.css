@@ -1,0 +1,23 @@
+.containerHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFDF3;
+}
+
+.containerPosts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFDF3;
+}
+
+.containerDocumentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%;
+    background-color: #FFFDF3;
+}

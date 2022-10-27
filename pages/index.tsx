@@ -1,16 +1,17 @@
 import React from 'react';
 import Header from '../src/components/header/header';
 import Footer from '../src/components/footer/footer';
-import Conteudo from '../src/components/conteudo/conteudo';
+import ConteudoHome from '../src/components/conteudo/conteudoHome';
+import AreaInterativa from '../src/components/areaInterativa/areaInterativa';
 import '@nextcss/reset';
 
 export default function Home(){
     return (
         <div>
-            <div className='container'>
+            <div>
+                <AreaInterativa/>
                 <Header/>
-                <div>Área Interativa</div>
-                <Conteudo/>
+                <ConteudoHome/>
                 <Footer/>
             </div>
         </div>

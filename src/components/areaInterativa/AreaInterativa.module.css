@@ -1,0 +1,15 @@
+.areaInterativa{
+    background-color: #F3C300;
+}
+
+.espacoInterativo{
+    width: 100%;
+    background-color: #F3C300;
+    z-index: 0;
+}
+
+.espacoInterativoAtivo{
+    width: 100%;
+    background-color: #F3C300;
+    z-index: 1;
+}

@@ -12,7 +12,7 @@ export default function Footer(){
                     regida pelo Instituto Mirante de Cultura e Arte
                 </p>
             </div>
-            <img className={styles.logo} src={`images/vetorLogoConecto.png`} id="logo"/>
+            <img className={styles.logo} src={`images/vetorLogoConectoBranco.png`} id="logo"/>
         </div>
     )
 }
