@@ -1,7 +1,7 @@
 import { ativadorHeader } from '../../commons/functions';
 import styles from './AreaInterativa.module.css'
 import { useEffect, useState } from "react"
-import {motion} from "framer-motion"
+import {CustomValueType, motion, Variants} from "framer-motion"
 
 export default function AreaInterativa(){
 
@@ -29,7 +29,7 @@ export default function AreaInterativa(){
 
     const circleSize = 220;
 
-    const variants = {
+    const variants :Variants = {
         default : {
             x : mousePosition.x - 15,
             y : mousePosition.y - 15
