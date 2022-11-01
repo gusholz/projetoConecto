@@ -1,25 +1,77 @@
-import React, { useState } from 'react';
 import { ativadorHeader } from '../../commons/functions';
 import styles from './AreaInterativa.module.css'
+import { useEffect, useState } from "react"
+import {motion} from "framer-motion"
 
 export default function AreaInterativa(){
 
-    const [showHeader,setShowHeader] = useState(true);
+    const [mousePosition,setMousePosition] = useState({
+        x : 0,
+        y : 0
+    });
 
-    let estilo:string;
+    const [interacaoCursor,setInteracaoCursor] = useState("default")
 
-    if(showHeader === true){
-        estilo = styles.espacoInterativoAtivo;
-    }else{
-        estilo = styles.espacoInterativo;
+    useEffect(()=>{
+        const movimentoMouse = e =>{
+             setMousePosition({
+                x: e.clientX,
+                y : e.clientY
+             })
+        }
+
+        window.addEventListener("mousemove",movimentoMouse)
+
+        return () => {
+            window.removeEventListener("mousemove",movimentoMouse);
+        }
+    }, []);
+
+    const circleSize = 220;
+
+    const variants = {
+        default : {
+            x : mousePosition.x - 15,
+            y : mousePosition.y - 15
+        },
+
+        interagindo :{
+            height: circleSize,
+            width : circleSize,
+            x : mousePosition.x - (circleSize/2),
+            y : mousePosition.y - (circleSize/2),
+            backgroundColor: "#F3C300",
+            mixBlendMode : "difference"
+        },
+
+        desligado : {
+            display: "none"
+        }
     }
 
-    console.log(estilo);
+    const mouseNaoInterage = () => {
+        setInteracaoCursor("default")
+    }
+    
+    const mouseInterage = () => {
+        setInteracaoCursor("interagindo");
+    }
+
+    const mouseDesligado = () => {
+        setInteracaoCursor("desligado")
+    }
+
+    const conecto = `{Co.necto}`
+
 
     return(
-        <div className={styles.areaInterativa}>
-            <canvas onMouseOut={()=>{ativadorHeader}} onMouseEnter={()=>setShowHeader(true)} onMouseLeave={()=>setShowHeader(false)} className={`${estilo}`}>
-            </canvas>
+        <div onMouseEnter={mouseNaoInterage} onMouseLeave={mouseDesligado} className={styles.areaInterativa}>
+            <h1 onMouseEnter={mouseInterage} onMouseLeave={mouseNaoInterage} className={styles.titulo}>{conecto}</h1>
+            <motion.div 
+                className={styles.cursor}
+                variants={variants}
+                animate = {interacaoCursor}
+            />
         </div>
 
     )

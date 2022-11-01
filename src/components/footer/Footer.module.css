@@ -31,8 +31,14 @@
     padding: 5vw;
 }
 
+.logoMis{
+    width: 20vw;
+    height: fit-content;
+}
+
 .logo{
     width: 15vh;
+    height: fit-content;
 }
 
 .infos{
@@ -48,7 +54,8 @@
 }
 
 .copyright{
-    margin-top: 2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.8vw;
     color:  #FFFDF3;
     font-family: Lato;   
     font-size: 0.8vw;

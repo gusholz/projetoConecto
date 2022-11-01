@@ -10,7 +10,7 @@ export default function Home(){
         <div>
             <div>
                 <AreaInterativa/>
-                <Header/>
+                <Header ativo={1}/>
                 <ConteudoHome/>
                 <Footer/>
             </div>

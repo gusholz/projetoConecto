@@ -1,15 +1,32 @@
+@font-face {
+    font-family: BasisGrotesqueSemiBold;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+
+.cursor{
+    cursor: none;
+    background-color: #151525;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
 .areaInterativa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F3C300;
+    width: 100%;
+    height: 100vh;
 }
 
-.espacoInterativo{
-    width: 100%;
-    background-color: #F3C300;
-    z-index: 0;
-}
-
-.espacoInterativoAtivo{
-    width: 100%;
-    background-color: #F3C300;
-    z-index: 1;
+.titulo{
+    font-family: BasisGrotesqueSemiBold;
+    color:#151525;
+    font-size: 14vw;
+    position:center;
 }

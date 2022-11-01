@@ -8,7 +8,7 @@ export default function Documentacao(){
     return (
         <div>
             <div>
-                <Header/>
+                <Header ativo={3}/>
                 <ConteudoDocumentacao/>
                 <Footer/>
             </div>

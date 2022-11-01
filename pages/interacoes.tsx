@@ -7,8 +7,8 @@ import '@nextcss/reset';
 export default function Interacoes(){
     return (
         <div>
-            <div >
-                <Header/>
+            <div>
+                <Header ativo={2}/>
                 <ConteudoInteracoes/>
                 <Footer/>
             </div>
