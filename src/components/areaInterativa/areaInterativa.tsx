@@ -1,7 +1,7 @@
 import { ativadorHeader } from '../../commons/functions';
 import styles from './AreaInterativa.module.css'
 import { useEffect, useState } from "react"
-import {CustomValueType, motion, Variants} from "framer-motion"
+import {motion, Variants} from "framer-motion"
 
 export default function AreaInterativa(){
 
