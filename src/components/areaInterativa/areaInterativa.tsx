@@ -1,4 +1,3 @@
-import { ativadorHeader } from '../../commons/functions';
 import styles from './AreaInterativa.module.css'
 import { useEffect, useState } from "react"
 import {motion, Variants} from "framer-motion"
@@ -13,14 +12,14 @@ export default function AreaInterativa(){
     const [interacaoCursor,setInteracaoCursor] = useState("default")
 
     useEffect(()=>{
-        const movimentoMouse = e =>{
+        const movimentoMouse = (e: { clientX: any; clientY: any; }) =>{
              setMousePosition({
                 x: e.clientX,
                 y : e.clientY
              })
         }
 
-        window.addEventListener("mousemove",movimentoMouse)
+        window.addEventListener("mousemove",movimentoMouse);
 
         return () => {
             window.removeEventListener("mousemove",movimentoMouse);
@@ -50,7 +49,7 @@ export default function AreaInterativa(){
     }
 
     const mouseNaoInterage = () => {
-        setInteracaoCursor("default")
+        setInteracaoCursor("default");
     }
     
     const mouseInterage = () => {
@@ -58,10 +57,10 @@ export default function AreaInterativa(){
     }
 
     const mouseDesligado = () => {
-        setInteracaoCursor("desligado")
+        setInteracaoCursor("desligado");
     }
 
-    const conecto = `{Co.necto}`
+    const conecto = `{Co.necto}`;
 
 
     return(
