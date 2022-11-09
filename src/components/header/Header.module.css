@@ -8,8 +8,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #F3C300;
-    -webkit-box-shadow: 0px 1px 15px 2px #151525; 
-    box-shadow: 0px 1px 15px 2px #151525;
+    
 }
 
 .container{
@@ -59,6 +58,8 @@
 
 .itemMenuAtivo a{
     color: #151525;
+    text-decoration: underline;
+    text-underline-offset: 0.3vw;
     font-family: BasisGrotesqueRegular;
     font-size: 2vw;
     margin-left: 2vw;

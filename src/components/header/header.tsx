@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 
 export default function Header(props:{ativo:number}){
 
-    const [conecto,setConecto] = useState("Co.necto")
+    const [conecto,setConecto] = useState("Co.necto");
     
     //Tempo em milisegundos do efeito de digitando
     const timeBlinking = 750;
@@ -12,9 +12,9 @@ export default function Header(props:{ativo:number}){
     useEffect(() => {
         const interval = setInterval(() => {
             if(checker % 2 === 0){
-                setConecto("Co.necto")
+                setConecto("Co.necto");
             }else{
-                setConecto("Co.necto|")
+                setConecto("Co.necto|");
             }
             checker++;
             if(checker===100){
@@ -26,9 +26,9 @@ export default function Header(props:{ativo:number}){
         return () => clearInterval(interval);
       }, [])
 
-    let home = `${styles.itemMenu}`
-    let interacoes = `${styles.itemMenu}`
-    let documentacao = `${styles.itemMenu}`
+    let home = `${styles.itemMenu}`;
+    let interacoes = `${styles.itemMenu}`;
+    let documentacao = `${styles.itemMenu}`;
 
         if(props.ativo === 1){
             props.ativo === 1 ? home = `${styles.itemMenuAtivo}` : home = `${styles.itemMenu}`;

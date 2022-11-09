@@ -9,7 +9,7 @@ export default function AreaInterativa(){
         y : 0
     });
 
-    const [interacaoCursor,setInteracaoCursor] = useState("default")
+    const [interacaoCursor,setInteracaoCursor] = useState("default");
 
     useEffect(()=>{
         const movimentoMouse = (e: { clientX: any; clientY: any; }) =>{
