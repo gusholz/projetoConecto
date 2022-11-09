@@ -14,7 +14,7 @@ export default function Post(props: {titulo:string, texto: string, img: string})
                     <h1 className={styles.titulo}>{props.titulo}</h1>
                     <p className={blocoTexto}>{props.texto}</p>
                 </div>
-                <img className={styles.imagens} src={`images/${props.img}.jpg`}/>
+                <img className={styles.imagens} src={`images/${props.img}.png`}/>
             </div>
 
     return (
