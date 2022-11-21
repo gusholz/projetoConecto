@@ -29,26 +29,29 @@
 }
 
 .titulo{
-    font-size: 3vw;
+    font-size: 48px;
     font-family: basisGrotesqueRegular;
 }
 
 .subtitulo{
-    font-size: 1.4vw;
+    font-size: 28px;
     font-family: latoItalico;
 }
 
 .data{
     font-family: latoItalico;
-    font-size: 1.3vw;
+    font-size: 24px;
 }
 
 .texto{
     font-family: lato;
-    font-size: 1.4vw;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 1vh;
+    margin-bottom: 1vw;
 }
 
 .referencias{
     font-family: latoItalico;
-    font-size: 1vw;
+    font-size: 14px;
 }

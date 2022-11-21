@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/gusholz/projetoConecto#readme",
   "dependencies": {
+    "@coreui/react": "^4.4.0",
     "@nextcss/reset": "^0.2.2-beta",
     "css-modules": "^0.3.0",
     "framer-motion": "^7.6.3",

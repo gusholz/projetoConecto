@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: space-around;
     background-color: #F3C300;
+    -webkit-box-shadow: 0px 5px 5px 1px #151525; 
+    box-shadow: 0px 1px 2px 0px #151525;
     
 }
 

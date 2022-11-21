@@ -31,7 +31,7 @@
 
 .titulo{
     font-family: BasisGrotesqueRegular;
-    font-size: 5.5vw;
+    font-size: 100px;
     max-width: 30%;
     text-align: left;
 }
@@ -39,7 +39,8 @@
 .texto{
     font-family: Sentient;
     text-align:left;
-    font-size: 1.1vw;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 .imagens{
