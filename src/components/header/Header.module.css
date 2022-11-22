@@ -9,18 +9,24 @@
     justify-content: space-around;
     background-color: #F3C300;
     -webkit-box-shadow: 0px 5px 5px 1px #151525; 
-    box-shadow: 0px 1px 2px 0px #151525;
-    
+    box-shadow: 0px 1px 2px 0px #151525;    
 }
 
 .container{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 
 .logo{
-    width: 5vh;
+    width: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.conecto{
+    margin-left: 1vw;
+    width: 10vw;
 }
 
 @font-face {
@@ -33,13 +39,6 @@
     src: url(../../../public/fonts/BasisGrotesqueArabicPro-Regular.ttf);
 }
 
-.titulo{
-    font-family: BasisGrotesqueSemiBold;
-    font-size: 3vw;
-    margin-left: 1vw;
-    color: #151525;
-    width: 249px;
-}
 
 .navMenu{
     display: flex;
@@ -53,7 +52,7 @@
 .itemMenu a{
     color: #151525;
     font-family: BasisGrotesqueRegular;
-    font-size: 2vw;
+    font-size: 30px;
     margin-left: 5px;
     opacity: .5;
 }
@@ -63,7 +62,7 @@
     text-decoration: underline;
     text-underline-offset: 0.3vw;
     font-family: BasisGrotesqueRegular;
-    font-size: 2vw;
+    font-size: 30px;
     margin-left: 2vw;
     opacity: 1;
 }

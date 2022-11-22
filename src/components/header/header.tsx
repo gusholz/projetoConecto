@@ -3,29 +3,6 @@ import styles from './Header.module.css';
 
 export default function Header(props:{ativo:number}){
 
-    const [conecto,setConecto] = useState("Co.necto");
-    
-    //Tempo em milisegundos do efeito de digitando
-    const timeBlinking = 750;
-    let checker = 0;
-    
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if(checker % 2 === 0){
-                setConecto("Co.necto");
-            }else{
-                setConecto("Co.necto|");
-            }
-            checker++;
-            if(checker===100){
-                checker=0;
-            }
-
-        }, timeBlinking);
-      
-        return () => clearInterval(interval);
-      }, [])
-
     let home = `${styles.itemMenu}`;
     let interacoes = `${styles.itemMenu}`;
     let documentacao = `${styles.itemMenu}`;
@@ -44,7 +21,7 @@ export default function Header(props:{ativo:number}){
         <div className={styles.header}>
             <div className={styles.container}>
                 <img className={styles.logo} src={`images/vetorLogoConecto.png`} id="logo"/>
-                <h1 className={styles.titulo}>{conecto}</h1>
+                <img className={styles.conecto} src={`images/conecto2.png`}/>
             </div>
             <div>
                 <menu className={styles.navMenu}>
