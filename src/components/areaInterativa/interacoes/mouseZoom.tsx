@@ -4,7 +4,6 @@ import styles from "./interacoes.module.css";
 
 export default function InteracaoMouseZoom(){
 
-
     const [mousePosition,setMousePosition] = useState({
         x : 0,
         y : 0
@@ -62,7 +61,6 @@ export default function InteracaoMouseZoom(){
     }
 
     const conecto = `{Co.necto}`;
-
 
     return(
         <div onMouseEnter={mouseNaoInterage} onMouseLeave={mouseDesligado} className={styles.areaInterativa}>

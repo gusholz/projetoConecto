@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import InteracaoMouseZoom from './interacoes/mouseZoom'
-import InteracaoP5 from './interacoes/sketch1p5'
-
+import InteracaoP5 from './interacoes/interacao1p5'
 
 export default function AreaInterativa(){
     const numInteracoes = 2;
