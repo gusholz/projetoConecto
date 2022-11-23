@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import InteracaoMouseZoom from '../../interacoes/mouseZoom'
-import InteracaoP5 from '../../interacoes/sketch1p5'
+import InteracaoMouseZoom from './interacoes/mouseZoom'
+import InteracaoP5 from './interacoes/sketch1p5'
 
 
 export default function AreaInterativa(){

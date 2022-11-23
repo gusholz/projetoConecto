@@ -1,5 +1,5 @@
 import styles from "./PostInteracao.module.css"
-import Botao from "./botaoCollapse"
+
 
 export default function PostInteracao(props: {srcImg:string,titulo:string,subtitulo:string,data:string, texto: string}){
     return (
