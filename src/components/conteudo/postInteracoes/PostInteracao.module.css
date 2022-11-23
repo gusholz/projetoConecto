@@ -61,3 +61,31 @@
     margin-top: 1vh;
     margin-bottom: 1vw;
 }
+
+@media only screen and (max-width:800px) {
+    .img{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .containerTexto{
+        max-width: 80%;
+    }
+    
+    .titulo{
+        font-size: 24px;
+    }
+    
+    .subtitulo{
+        font-size: 18px;
+    }
+    
+    .data{
+        margin-top: 1%;
+        font-size: 14px;
+    }
+    
+    .texto{
+        font-size: 14px;
+    }
+}

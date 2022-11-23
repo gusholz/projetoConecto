@@ -3,7 +3,6 @@ import styles from "./Footer.module.css"
 export default function Footer(){
     return (
         <div className={styles.container}>
-            <div>
                 <img className={styles.logoMis} src={`images/logoMis.png`}></img>
                 <p className={styles.copyright}>
                     O projeto Co.necto é vinculado ao Museu
@@ -12,8 +11,7 @@ export default function Footer(){
                 </p>
                 <h2 className={styles.infos}>Para mais informações:</h2>
                 <h3 className={styles.contato}>projetoconecto@institutomirante.com.br</h3>
-            </div>
-            <img className={styles.logo} src={`images/vetorLogoConectoBranco.png`} id="logo"/>
+                <img className={styles.logo} src={`images/vetorLogoConectoBranco.png`} id="logo"/>
         </div>
     )
 }

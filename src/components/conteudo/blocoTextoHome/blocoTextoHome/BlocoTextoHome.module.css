@@ -80,3 +80,49 @@
     height: fit-content;
     margin-right: 6%;
 }
+
+
+@media only screen and (max-width:800px) {
+    .containerPai{
+        flex-direction: column;
+    }
+
+    .containerPaiBlack{
+        flex-direction: column;
+    }
+    
+    .container{
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .containerBlack{
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .tituloBlack{
+        font-size: 24px;
+    }
+    
+    .texto{
+        font-size: 14px;
+        line-height: 1.5;
+        
+    }
+
+    .textoBlack{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .imagens{
+        max-width: 100%;
+        height: fit-content;
+        margin-right: 6%;
+    }
+}

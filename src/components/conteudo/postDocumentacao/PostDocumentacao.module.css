@@ -55,3 +55,37 @@
     font-family: latoItalico;
     font-size: 14px;
 }
+
+@media only screen and (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+        padding: 2vh;
+    }
+    
+    .titulo{
+        font-size: 24px;
+    }
+    
+    .subtitulo{
+        font-size: 20px;
+    }
+    
+    .data{
+        font-size: 14px;
+    }
+    
+    .texto{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 1vh;
+        margin-bottom: 1vw;
+    }
+    
+    .referencias{
+        font-family: latoItalico;
+        font-size: 12px;
+    }
+}

@@ -60,3 +60,44 @@
     font-family: Lato;   
     font-size: 0.8vw;
 }
+
+@media only screen and (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7%;
+    }
+    
+    .logoMis{
+        width: 16vh;
+        height: fit-content;
+    }
+    
+    .logo{
+        width: 10vh;
+        height: fit-content;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .infos{
+        color:  #FFFDF3;
+        font-family: LatoBold;
+        font-size: 12px;
+    }
+    
+    .contato{
+        color:  #FFFDF3;
+        font-family: LatoItalico;   
+        font-size: 12px;
+    }
+    
+    .copyright{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 10px;
+        max-width: 60%;
+        text-align: center;
+    }
+}
