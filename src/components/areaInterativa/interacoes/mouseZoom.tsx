@@ -1,6 +1,6 @@
 import {motion, Variants} from "framer-motion";
 import { useEffect, useState } from "react";
-import styles from '../components/areaInterativa/areaInterativa.module.css';
+import styles from "./interacoes.module.css";
 
 export default function InteracaoMouseZoom(){
 

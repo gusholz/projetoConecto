@@ -1,8 +1,6 @@
 import p5Types from "p5";
-import dynamic from 'next/dynamic'
-import styles from '../components/areaInterativa/areaInterativa.module.css'
-
-
+import dynamic from "next/dynamic";
+import styles from "./interacoes.module.css";
 
 export default function InteracaoP5(){
     let x = 50;
