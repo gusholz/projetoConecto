@@ -24,33 +24,49 @@
     src: url(../../../public/fonts/Lato-Bold.ttf);
 }
 
+.containerPai{
+    background-color: #151525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.containerImagens{
+    display: flex;
+    max-width: 80%;
+
+    padding: 5%;
+}
+
 .container{
     background-color: #151525;
     display: flex;
     justify-content: space-evenly;
-    padding: 3vw;
-}
-
-.logoMis{
-    width: 20vw;
-    height: fit-content;
+    padding: 2%;
+    max-width: 60%;
 }
 
 .logo{
-    width: 15vh;
+    max-width: 240px;
     height: fit-content;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
+
 .infos{
-    color:  #FFFDF3;
+    color:#FFFDF3;
     font-family: LatoBold;
-    font-size: 1vw;
+    font-size: 12px;
 }
 
 .contato{
     color:  #FFFDF3;
     font-family: LatoItalico;   
-    font-size: 1vw;
+    font-size: 12px;
 }
 
 .copyright{
@@ -58,7 +74,8 @@
     margin-bottom: 1.8vw;
     color:  #FFFDF3;
     font-family: Lato;   
-    font-size: 0.8vw;
+    font-size: 12px; 
+    line-height: 1.8;
 }
 
 @media only screen and (max-width:800px) {
