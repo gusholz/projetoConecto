@@ -68,8 +68,11 @@ export default function InteracaoP5(){
     
 
     return (
-        <div className={styles.areaInterativa}>
-            <Sketch className={styles.canvas} setup={setup} draw={draw} />
-        </div>
+        <>
+            <div className={styles.areaInterativa}>
+                <Sketch className={styles.canvas} setup={setup} draw={draw} />
+            <img className={styles.setaP5} src={`images/seta.png`} />
+            </div>
+        </>
     );
 }

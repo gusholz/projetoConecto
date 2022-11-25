@@ -22,8 +22,8 @@ export default function AreaInterativa(){
     }, []);
 
     return(
-        <>
+        <div>
             {seletorInteracao}
-        </>
+        </div>
     )
 }

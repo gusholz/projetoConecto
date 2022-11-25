@@ -17,6 +17,7 @@
 
 .areaInterativa{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F3C300;
@@ -31,6 +32,27 @@
     position:center;
 }
 
-@media (max-width:800px) {
-    
+.seta{
+    width: 180px;
+    height: fit-content;
+    transform: translateY(24vh);
+}
+
+.setaP5{
+    width: 150px;
+    height: fit-content;
+    transform: translateY(8vh);
+}
+
+@media only screen  and (max-width:800px) {
+    .seta{
+        width: 80px;
+        height: fit-content;
+        transform: translateY(36vh);
+    }
+
+    .setaP5{
+        width: 80px;
+        transform: translateY(4vh);
+    }
 }

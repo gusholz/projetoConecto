@@ -60,7 +60,7 @@ export default function InteracaoMouseZoom(){
         setInteracaoCursor("desligado");
     }
 
-    const conecto = `{Co.necto}`;
+    const conecto = `{Co.necte-se}`;
 
     return(
         <div onMouseEnter={mouseNaoInterage} onMouseLeave={mouseDesligado} className={styles.areaInterativa}>
@@ -70,6 +70,7 @@ export default function InteracaoMouseZoom(){
                 variants={variants}
                 animate = {interacaoCursor}
             />
+            <img className={styles.seta} src={`images/seta.png`} />
         </div>
     );
 }
