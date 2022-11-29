@@ -24,7 +24,8 @@ export default function Footer(){
                 </div>
                 <h2 className={styles.infos}>Para mais informações:</h2>
                 <h3 className={styles.contato}>projetoconecto@institutomirante.com.br</h3>
-                <img className={styles.logo} src={`images/vetorLogoConectoBranco.png`} id="logo"/>
+                <h3 className={styles.contato}>@projetoconecto</h3>
+                <h3 className={styles.desenvolvidoPor}>Site desenvolvido por Gustavo Holzmann</h3>
         </div>
     )
 }
