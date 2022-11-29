@@ -5,9 +5,11 @@ export default function Footer(){
         <div className={styles.containerPai}>
             
                 <div className={styles.containerImagens}>
-                    <img className={styles.logo} src={`images/logoMis.png`}></img>
+                    <img className={styles.logo} src={`images/logoMis.png`} />
                     <img className={styles.logo} src={`images/logoLed.png`} />
                     <img className={styles.logo} src={`images/logoCelula.png`} />
+                    <img className={styles.logo} src={`images/logoMirante.png`} />
+                    <img className={styles.logo} src={`images/logoGov.png`} />
                 </div>
                 <div className={styles.container}>
                     <p className={styles.copyright}>

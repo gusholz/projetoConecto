@@ -18,7 +18,6 @@
     src: url(../../../public/fonts/Lato-Italic.ttf);
 }
 
-
 @font-face {
     font-family: latoBold;
     src: url(../../../public/fonts/Lato-Bold.ttf);
@@ -34,8 +33,7 @@
 
 .containerImagens{
     display: flex;
-    max-width: 80%;
-
+    justify-content: center;
     padding: 5%;
 }
 
@@ -85,6 +83,10 @@
         align-items: center;
         padding: 7%;
     }
+
+    .containerImagens{
+        flex-wrap: wrap;
+    }
     
     .logoMis{
         width: 16vh;
@@ -114,7 +116,6 @@
         margin-top: 5%;
         margin-bottom: 5%;
         font-size: 10px;
-        max-width: 60%;
         text-align: center;
     }
 }
