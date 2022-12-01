@@ -57,15 +57,9 @@ export default function InteracaoP5(){
             if(selected>3){
                 selected = 1;
             } 
-            p5.print(selected)
-           
         }
 
 	};
-
-
-        
-    
 
     return (
         <>
