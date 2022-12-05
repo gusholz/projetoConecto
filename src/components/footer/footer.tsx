@@ -16,11 +16,10 @@ export default function Footer(){
                         O projeto Co.necto é vinculado ao Museu da Imagem e do Som, instituição pública
                         regida pelo Instituto Mirante de Cultura e Arte.
                         Surge na Universidade Federal do Ceará, mais especificamente, a partir da parceria
-                        entre o Laboratório de Experiência Digital, que atua no departamento
+                        entre o Laboratório de Experiência Digital (LED), que atua no departamento
                         de Arquitetura, Urbanismo e Design e a Célula Multimídia, do departamento
                         de Sistemas e Mídias Digitais. 
                     </p>
-                    
                 </div>
                 <h2 className={styles.infos}>Para mais informações:</h2>
                 <h3 className={styles.contato}>projetoconecto@institutomirante.com.br</h3>
