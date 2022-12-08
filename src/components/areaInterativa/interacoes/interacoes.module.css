@@ -22,7 +22,7 @@
     align-items: center;
     background-color: #F3C300;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
 }
 
 .titulo{
@@ -40,8 +40,16 @@
 
 .setaP5{
     width: 150px;
+    padding:2vh;
     height: fit-content;
-    transform: translateY(8vh);
+    
+}
+
+.logoInterativa{
+    font-family: BasisGrotesqueSemiBold;
+    color:#151525;
+    font-size: 6vw;
+    position: absolute;
 }
 
 @media only screen  and (max-width:800px) {
