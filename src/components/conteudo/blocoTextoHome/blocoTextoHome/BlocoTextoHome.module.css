@@ -76,9 +76,15 @@
 }
 
 .imagens{
-    max-width: 40%;
+    max-width: 50%;
     height: fit-content;
-    margin-right: 6%;
+    animation-name: slideImagem;
+    animation-duration: 6s;
+}
+
+@keyframes slideImagem{
+    from{opacity: 0;}
+    to{opacity: 100%;}
 }
 
 

@@ -4,11 +4,12 @@ import styles from "./interacoes.module.css";
 
 export default function InteracaoP5(){
 
+    let height = screen.height;
     let diametroMin = 250;
     let diametroMax = 1500;
     let diametroStep = 50;
     let aceleracao = 0.15;
-    let xx,yy: number;
+    let xx:number,yy: number;
     let angulo = 0;
 
     if((screen.availWidth)<1100){
@@ -26,13 +27,13 @@ export default function InteracaoP5(){
     const setup = (p5:p5Types,canvasParentRef:Element) => {
         //O tamanho ta bugando por conta da aba lateral do operaGX
         //Testar como vai funfar em outras telas
-        p5.createCanvas(p5.displayWidth-58,800).parent(canvasParentRef);
+        p5.createCanvas(p5.displayWidth-58,height*0.65).parent(canvasParentRef);
         //p5.fullscreen();
 
         p5.noFill();
         p5.strokeWeight(diametroStep/6);
-        p5.stroke(21,21,37,220);
-        p5.frameRate(60);
+        p5.stroke(21,21,37,180);
+        p5.frameRate(48);
         p5.smooth();
     }
 
@@ -61,8 +62,7 @@ export default function InteracaoP5(){
         <>
             <div className={styles.areaInterativa}>
                 <Sketch className={styles.canvas} setup={setup} draw={draw} />
-                <h1 className={styles.logoInterativa}>{conecto}</h1>
-            <img className={styles.setaP5} src={`images/seta.png`} />
+                <h1 className={styles.logoInterativa}>{conecto}</h1>           
             </div>
         </>
     );

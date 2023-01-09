@@ -70,7 +70,6 @@ export default function InteracaoMouseZoom(){
                 variants={variants}
                 animate = {interacaoCursor}
             />
-            <img className={styles.seta} src={`images/seta.png`} />
         </div>
     );
 }
