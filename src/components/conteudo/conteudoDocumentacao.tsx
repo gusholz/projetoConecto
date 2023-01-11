@@ -1,7 +1,7 @@
 import PostDocumentacao from "./postDocumentacao/postDocumentacao";
 import styles from '../conteudo/Conteudo.module.css'
 
-export default function ConteudoInteracoes(){
+export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
     return (
         <div className={styles.containerDocumentacao}>
             <PostDocumentacao
@@ -11,6 +11,7 @@ export default function ConteudoInteracoes(){
                 texto="O projeto Co.necto surge com um desejo de transformar a nossa realidade graças a preservação da memória e dos afetos, 
                 com o intuito máximo de promover as conexões humanas, a partir do emprego da tecnologia enquanto um meio, e não como um fim"
                 referencias="Autor. Título: subtitulo. edição. Local: Editora, ano. página. volume."
+                tamanhoFonte= {props.tamanhoFonte}
             />
             <PostDocumentacao
                 titulo="Níveis de Interação"
@@ -19,6 +20,7 @@ export default function ConteudoInteracoes(){
                 texto="O projeto Co.necto surge com um desejo de transformar a nossa realidade graças a preservação da memória e dos afetos, 
                 com o intuito máximo de promover as conexões humanas, a partir do emprego da tecnologia enquanto um meio, e não como um fim"
                 referencias="Autor. Título: subtitulo. edição. Local: Editora, ano. página. volume."
+                tamanhoFonte= {props.tamanhoFonte}
             />
             <PostDocumentacao
                 titulo="Níveis de Interação"
@@ -27,6 +29,7 @@ export default function ConteudoInteracoes(){
                 texto="O projeto Co.necto surge com um desejo de transformar a nossa realidade graças a preservação da memória e dos afetos, 
                 com o intuito máximo de promover as conexões humanas, a partir do emprego da tecnologia enquanto um meio, e não como um fim"
                 referencias="Autor. Título: subtitulo. edição. Local: Editora, ano. página. volume."
+                tamanhoFonte= {props.tamanhoFonte}
             />
         </div>
     )

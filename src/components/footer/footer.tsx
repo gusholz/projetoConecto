@@ -2,8 +2,7 @@ import styles from "./Footer.module.css"
 
 export default function Footer(){
     return (
-        <div className={styles.containerPai}>
-            
+        <div className={styles.containerPai}>           
                 <div className={styles.containerImagens}>
                     <img className={styles.logo} src={`images/logoMis.png`} />
                     <img className={styles.logo} src={`images/logoLed.png`} />

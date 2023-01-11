@@ -29,23 +29,19 @@
 }
 
 .titulo{
-    font-size: 48px;
     font-family: basisGrotesqueRegular;
 }
 
 .subtitulo{
-    font-size: 28px;
     font-family: latoItalico;
 }
 
 .data{
     font-family: latoItalico;
-    font-size: 24px;
 }
 
 .texto{
     font-family: lato;
-    font-size: 20px;
     line-height: 1.6;
     margin-top: 1vh;
     margin-bottom: 1vw;
@@ -53,7 +49,6 @@
 
 .referencias{
     font-family: latoItalico;
-    font-size: 14px;
 }
 
 @media only screen and (max-width:800px) {
@@ -65,27 +60,9 @@
         padding: 2vh;
     }
     
-    .titulo{
-        font-size: 24px;
-    }
-    
-    .subtitulo{
-        font-size: 20px;
-    }
-    
-    .data{
-        font-size: 14px;
-    }
-    
     .texto{
-        font-size: 14px;
         line-height: 1.5;
         margin-top: 1vh;
         margin-bottom: 1vw;
-    }
-    
-    .referencias{
-        font-family: latoItalico;
-        font-size: 12px;
     }
 }

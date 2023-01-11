@@ -31,7 +31,6 @@
 
 .titulo{
     font-family: BasisGrotesqueRegular;
-    font-size: 52px;
     max-width: 30%;
     text-align: left;
 }
@@ -39,7 +38,6 @@
 .texto{
     font-family: Sentient;
     text-align:left;
-    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -61,7 +59,6 @@
 
 .tituloBlack{
     font-family: BasisGrotesqueRegular;
-    font-size: 52px;
     max-width: 30%;
     text-align: left;
     color:  #FFFDF3;
@@ -70,7 +67,6 @@
 .textoBlack{
     font-family: Sentient;
     text-align:left;
-    font-size: 20px;
     line-height: 1.6;
     color:  #FFFDF3;
 }
@@ -106,29 +102,17 @@
         flex-direction: column;
         max-width: 80%;
     }
-
-    .titulo{
-        font-size: 24px;
-    }
-
-    .tituloBlack{
-        font-size: 24px;
-    }
     
     .texto{
-        font-size: 14px;
-        line-height: 1.5;
-        
+        line-height: 1.5;   
     }
 
     .textoBlack{
-        font-size: 14px;
         line-height: 1.5;
     }
 
     .imagens{
         max-width: 100%;
         height: fit-content;
-        margin-right: 6%;
     }
 }

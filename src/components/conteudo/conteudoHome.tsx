@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react';
 import BlocoTextoHome from './blocoTextoHome/blocoTextoHome/blocoTextoHome'
 import styles from './Conteudo.module.css'
 
-export default function ConteudoHome(){
+export default function ConteudoHome(props:{tamanhoFonte:number}){
 
     const [blinking,setBlinking] = useState("Sobre");
     const [blinking2,setBlinking2] = useState("Como");
@@ -43,8 +43,9 @@ export default function ConteudoHome(){
                     que relacionam aspectos subjetivos, evidenciando dramas e dilemas essencialmente humanos – para além de enfoques meramente racionais,
                     intencionamos investigar o museu como espaço de criação de narrativas colaborativas com os visitantes.
                     "
-                img = 'conectoMis'
-                bgColor={0}                 
+                img = 'membrosConecto'
+                bgColor={0}          
+                tamanhoFonte={props.tamanhoFonte}       
             />
             <BlocoTextoHome 
                 titulo={blinking2}
@@ -55,6 +56,7 @@ export default function ConteudoHome(){
                 "     
                 img = 'interacaoProjecao'
                 bgColor={1} 
+                tamanhoFonte={props.tamanhoFonte}
             />
             <BlocoTextoHome 
                 titulo="Para Quem?"
@@ -64,7 +66,8 @@ export default function ConteudoHome(){
                     Neste primeiro momento, estamos trabalhando em conjunto com a comunidade do Mucuripe, salvaguardando seus laços e suas práticas culturais a partir de nossa atuação conjunta.
                     "  
                 img = 'procisaoSaoPedro'
-                bgColor={0} 
+                bgColor={0}
+                tamanhoFonte={props.tamanhoFonte}
             />
         </div>
     )

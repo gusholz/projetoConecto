@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Conteudo.module.css'
 import PostInteracao from './postInteracoes/postInteracao';
 
-export default function ConteudoInteracoes(){
+export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
     return (
         <div className={styles.containerPosts}>
             <PostInteracao 
@@ -17,6 +17,7 @@ export default function ConteudoInteracoes(){
                     da presença de uma pessoa, é possível fazer um recorte no tempo e na memória, e na medida em que esse corpo ocupa esse espaço,
                     ele segmenta a existência e a memória da vila dos pescadores.
                     "
+                tamanhoFonte={props.tamanhoFonte}    
             />
             <PostInteracao
                 srcImg="arduino"
@@ -30,6 +31,7 @@ export default function ConteudoInteracoes(){
                     ler quando um cartão de radiofrequência se aproxima, identificar qual cartão foi lido e qual módulo o leu, mandando a informação para outros softwares, como o
                     TouchDesigner para mudar a imagem em uma projeção, como foi usado, ao utilizar um desses cartões dentro de um impresso 3D.
                     "
+                tamanhoFonte={props.tamanhoFonte}
             />
            <PostInteracao 
                 srcImg="concept"
@@ -43,6 +45,7 @@ export default function ConteudoInteracoes(){
                     Assim, resolvemos explorar o contexto e a cultura da vila de pescadores do Mucuripe (Fortaleza - CE), explorando a sua história e a manutenção da sua memória ameaçada pela especulação imobiliária.
                     A história foi então dividida em 7 partes e acompanha um pescador e a sua filha, intermediada pela lenda de um peixe místico.
                     "
+                tamanhoFonte={props.tamanhoFonte}    
             />
         </div>
     )
