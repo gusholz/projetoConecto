@@ -28,7 +28,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+.containerPaiBlack{
+    background-color: #424252;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .containerImagens{
@@ -40,6 +45,12 @@
 
 .container{
     background-color: #151525;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 60%;
+}
+.containerBlack{
+    background-color: #424252;
     display: flex;
     justify-content: space-evenly;
     max-width: 60%;
@@ -118,7 +129,7 @@
     .contato{
         color:  #FFFDF3;
         font-family: LatoItalico;   
-        font-size: 12px;
+        font-size: 1px;
     }
     
     .copyright{

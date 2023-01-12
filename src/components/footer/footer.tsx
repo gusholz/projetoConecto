@@ -1,8 +1,27 @@
 import styles from "./Footer.module.css"
 
-export default function Footer(){
+export default function Footer(props:{darkMode:boolean}){
+
+    let containerPai = `${styles.containerPai}`
+    let container = `${styles.container}`
+    let bgColor = 0;
+
+    if(props.darkMode ===true){
+        bgColor = 1;
+    }else{
+        bgColor = 0;
+    }
+    if(bgColor===1){
+        containerPai = `${styles.containerPaiBlack}`
+        container = `${styles.containerBlack}`
+    }else{
+        containerPai = `${styles.containerPai}`
+        container = `${styles.container}`
+    }
+
+
     return (
-        <div className={styles.containerPai}>           
+        <div className={containerPai}>           
                 <div className={styles.containerImagens}>
                     <img className={styles.logo} src={`images/logoMis.png`} />
                     <img className={styles.logo} src={`images/logoLed.png`} />
@@ -10,7 +29,7 @@ export default function Footer(){
                     <img className={styles.logo} src={`images/logoMirante.png`} />
                     <img className={styles.logo} src={`images/logoGov.png`} />
                 </div>
-                <div className={styles.container}>
+                <div className={container}>
                     <p className={styles.copyright}>
                         O projeto Co.necto é vinculado ao Museu da Imagem e do Som, instituição pública
                         regida pelo Instituto Mirante de Cultura e Arte.

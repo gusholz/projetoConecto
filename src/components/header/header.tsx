@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import styles from './Header.module.css';
 
-export default function Header(props:{ativo:number,setTamanhoFonte:Function,tamanhoFonte:number}){
+export default function Header(props:{ativo:number,setTamanhoFonte:Function,tamanhoFonte:number,setDarkMode,darkMode:boolean}){
 
     let home = `${styles.itemMenu}`;
     let interacoes = `${styles.itemMenu}`;
@@ -30,6 +30,14 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
             }
         }
 
+        const handleChange = () =>{
+            if(props.darkMode===false){
+                props.setDarkMode(true);
+            }else{
+                props.setDarkMode(false);
+            }
+        }
+
 
     return (
         <div className={styles.header}>
@@ -45,6 +53,7 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
                     <div className={styles.containerBotaoFonte}>
                         <a className={styles.botaoMudar} onClick={handleIncrease}><img className={styles.botaoFonte} src={'images/A+.png'}/></a>
                         <a className={styles.botaoMudar} onClick={handleDecrease}><img className={styles.botaoFonte} src={'images/a-.png'}/></a>
+                        <a className={styles.botaoDarkMode} onClick={handleChange}><img className={styles.botaoDarkMode} src={'images/darkModeIcon.svg'}/></a>
                     </div>
                 </menu>
             </div>

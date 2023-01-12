@@ -7,16 +7,12 @@ export default function Post(props: {titulo:string, texto: string, img: string, 
     let titulo = `${styles.titulo}`;
     let jsx = <></>;
 
-    blocoTexto = `${styles.texto}`;
-    container = `${styles.container}`;
     if(props.bgColor===1){
         containerPai = `${styles.containerPaiBlack}`
         container = `${styles.containerBlack}`;
         blocoTexto = `${styles.textoBlack}`;
         titulo = `${styles.tituloBlack}`;
     }
-
-    console.log(props.tamanhoFonte);
 
         jsx =
             <div className={containerPai}>

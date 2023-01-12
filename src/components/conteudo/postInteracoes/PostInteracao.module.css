@@ -29,6 +29,15 @@
     flex-direction: column;
     align-items: center;
     padding: 4vw;
+    background-color: #FFFDF3;
+}
+
+.containerPostBlack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw;
+    background-color: #151525;
 }
 
 .img{
@@ -42,20 +51,46 @@
 
 .titulo{
     font-family: basisGrotesqueRegular;
+    color: #151525;
+}
+
+.tituloBlack{
+    font-family: basisGrotesqueRegular;
+    color: #FFFDF3;
 }
 
 .subtitulo{
     font-family: lato;
+    color: #151525;
+}
+
+.subtituloBlack{
+    font-family: lato;
+    color: #FFFDF3;
 }
 
 .data{
     font-family: latoItalico;
+    color: #151525;
+}
+
+.dataBlack{
+    font-family: latoItalico;
+    color: #FFFDF3;
 }
 
 .texto{
     font-family: lato;
     margin-top: 1vh;
     margin-bottom: 1vw;
+    color: #151525;
+}
+
+.textoBlack{
+    font-family: lato;
+    margin-top: 1vh;
+    margin-bottom: 1vw;
+    color: #FFFDF3;
 }
 
 @media only screen and (max-width:800px) {

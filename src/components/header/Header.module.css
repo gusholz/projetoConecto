@@ -75,11 +75,21 @@
 .containerBotaoFonte{
     display: flex;
     margin-left: 4vw;
+    align-items: center;
 }
 
 .botaoFonte{
     max-width: 1.4vw;
     margin-left: 1vw;
+}
+
+.botaoDarkMode{
+    max-width: 1.4vw;
+    margin-left: 0.8vw;
+}
+
+.botaoDarkMode :hover{
+    cursor: pointer;
 }
 
 .botaoMudar :hover{
@@ -128,6 +138,10 @@
     }
 
     .botaoFonte{
+        display: none;
+    }
+
+    .botaoDarkMode{
         display: none;
     }
 }

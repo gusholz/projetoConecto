@@ -1,7 +1,7 @@
 import PostDocumentacao from "./postDocumentacao/postDocumentacao";
 import styles from '../conteudo/Conteudo.module.css'
 
-export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
+export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:boolean}){
     return (
         <div className={styles.containerDocumentacao}>
             <PostDocumentacao

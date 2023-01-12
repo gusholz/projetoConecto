@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react';
 import BlocoTextoHome from './blocoTextoHome/blocoTextoHome/blocoTextoHome'
 import styles from './Conteudo.module.css'
 
-export default function ConteudoHome(props:{tamanhoFonte:number}){
+export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean}){
 
     const [blinking,setBlinking] = useState("Sobre");
     const [blinking2,setBlinking2] = useState("Como");
@@ -10,6 +10,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number}){
     //Tempo em milisegundos do efeito de digitando
     const timeBlinking = 750;
     let checker = 0;
+    
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -28,7 +29,15 @@ export default function ConteudoHome(props:{tamanhoFonte:number}){
         }, timeBlinking);
       
         return () => clearInterval(interval);
-      }, [])
+      }, []);
+
+
+    let backgroundColor = 0;
+    if(props.darkMode===true){
+        backgroundColor = 1;
+    }else{
+        backgroundColor = 0;
+    }
 
     return (
         <div className={styles.containerHome}>
@@ -44,7 +53,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number}){
                     intencionamos investigar o museu como espaço de criação de narrativas colaborativas com os visitantes.
                     "
                 img = 'membrosConecto'
-                bgColor={0}          
+                bgColor={backgroundColor}          
                 tamanhoFonte={props.tamanhoFonte}       
             />
             <BlocoTextoHome 
@@ -55,7 +64,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number}){
                     interativa única com os usuários no ambiente museulógico do MIS, mas também fora dele, levando essas interações para áreas não habituadas a utilizar estas tecnologias.
                 "     
                 img = 'interacaoProjecao'
-                bgColor={1} 
+                bgColor={backgroundColor} 
                 tamanhoFonte={props.tamanhoFonte}
             />
             <BlocoTextoHome 
@@ -66,7 +75,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number}){
                     Neste primeiro momento, estamos trabalhando em conjunto com a comunidade do Mucuripe, salvaguardando seus laços e suas práticas culturais a partir de nossa atuação conjunta.
                     "  
                 img = 'procisaoSaoPedro'
-                bgColor={0}
+                bgColor={backgroundColor}
                 tamanhoFonte={props.tamanhoFonte}
             />
         </div>

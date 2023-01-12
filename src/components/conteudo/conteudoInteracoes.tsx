@@ -2,7 +2,15 @@ import React from 'react';
 import styles from './Conteudo.module.css'
 import PostInteracao from './postInteracoes/postInteracao';
 
-export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
+export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:boolean}){
+
+    let backgroundColor = 0;
+    if(props.darkMode === true){
+        backgroundColor = 1;
+    }else{
+        backgroundColor = 0;
+    }
+
     return (
         <div className={styles.containerPosts}>
             <PostInteracao 
@@ -17,7 +25,8 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
                     da presença de uma pessoa, é possível fazer um recorte no tempo e na memória, e na medida em que esse corpo ocupa esse espaço,
                     ele segmenta a existência e a memória da vila dos pescadores.
                     "
-                tamanhoFonte={props.tamanhoFonte}    
+                tamanhoFonte={props.tamanhoFonte} 
+                bgColor ={backgroundColor}   
             />
             <PostInteracao
                 srcImg="arduino"
@@ -32,6 +41,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
                     TouchDesigner para mudar a imagem em uma projeção, como foi usado, ao utilizar um desses cartões dentro de um impresso 3D.
                     "
                 tamanhoFonte={props.tamanhoFonte}
+                bgColor ={backgroundColor}   
             />
            <PostInteracao 
                 srcImg="concept"
@@ -45,7 +55,8 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number}){
                     Assim, resolvemos explorar o contexto e a cultura da vila de pescadores do Mucuripe (Fortaleza - CE), explorando a sua história e a manutenção da sua memória ameaçada pela especulação imobiliária.
                     A história foi então dividida em 7 partes e acompanha um pescador e a sua filha, intermediada pela lenda de um peixe místico.
                     "
-                tamanhoFonte={props.tamanhoFonte}    
+                tamanhoFonte={props.tamanhoFonte}
+                bgColor ={backgroundColor}       
             />
         </div>
     )
