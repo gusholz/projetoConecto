@@ -28,7 +28,7 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
             if(props.tamanhoFonte>18){
                 props.setTamanhoFonte(prevFontSize => prevFontSize - 2);
             }
-        }
+        };
 
         const handleChange = () =>{
             if(props.darkMode===false){
@@ -36,14 +36,14 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
             }else{
                 props.setDarkMode(false);
             }
-        }
+        };
 
 
     return (
         <div className={styles.header}>
             <div className={styles.container}>
                 <img alt='Logo projeto Conecto' className={styles.logo} src={`images/vetorLogoConecto.png`} id="logo"/>
-                <img alt='Co.necto' className={styles.conecto} src={`images/conecto2.png`}/>
+                <a href='/'><img alt='Co.necto' className={styles.conecto} src={`images/conecto2.png`}/></a>
             </div>
             <div>
                 <menu className={styles.navMenu}>
@@ -58,5 +58,5 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
                 </menu>
             </div>
         </div>
-    )
+    );
 }

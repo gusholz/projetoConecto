@@ -22,7 +22,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
                 setBlinking2("Como|");
             }
             checker++;
-            if(checker===100){
+            if(checker === 100){
                 checker=0;
             }
 

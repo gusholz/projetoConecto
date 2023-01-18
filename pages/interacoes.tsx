@@ -27,11 +27,11 @@ export default function Interacoes(): JSX.Element{
     
     const [darkMode,setDarkMode] = useState(false);
 
-
     return (
         <div>
             <div>
                 <Header darkMode={darkMode}  setDarkMode={setDarkMode} tamanhoFonte={tamanhoFonte} setTamanhoFonte={setTamanhoFonte} ativo={2}/>
+                
                 <ConteudoInteracoes darkMode={darkMode} tamanhoFonte={tamanhoFonte}/>
                 <Footer darkMode={darkMode}/>
             </div>

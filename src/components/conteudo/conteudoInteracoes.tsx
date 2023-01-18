@@ -1,63 +1,111 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Conteudo.module.css'
-import PostInteracao from './postInteracoes/postInteracao';
+import style from "../conteudo/postInteracoes/postInteracao.module.css";
+import SearchField from './searchField';
+import { drops } from './drops';
 
 export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:boolean}){
 
-    let backgroundColor = 0;
+    const [searchBox,setSearchBox] = useState("");
+
+    //Post
+    let container = `${style.containerPost}`
+    let titulo2 = `${style.titulo}`
+    let subtitulo = `${style.subtitulo}`
+    let data = `${style.data}`
+    let texto = `${style.texto}`
+    let containerPosts = `${styles.containerPosts}`
+    let titulo = `${styles.titulo}`
+    let descricao = `${styles.descricao}`
+
     if(props.darkMode === true){
-        backgroundColor = 1;
+        container = `${style.containerPostBlack}`
+        titulo2 = `${style.tituloBlack}`;
+        subtitulo = `${style.subtituloBlack}`;
+        data = `${style.dataBlack}`;
+        texto = `${style.textoBlack}`
+        containerPosts = `${styles.containerPostsBlack}`
+        titulo = `${styles.tituloBlack}`
+        descricao = `${styles.descricaoBlack}`
     }else{
-        backgroundColor = 0;
+        container = `${style.containerPost}`
+        titulo2 = `${style.titulo}`
+        subtitulo = `${style.subtitulo}`
+        data = `${style.data}`
+        data = `${style.data}`
+        containerPosts = `${styles.containerPosts}`
+        titulo = `${styles.titulo}`
+        descricao = `${styles.descricao}`
+    }
+
+    const [ordem,setOrdem] = useState(1);
+    const alternarOrdem = () =>{
+        if(ordem != 1){
+            drops.reverse();
+            setOrdem(1);
+        }
+    }
+    const alternarOrdem2 = () =>{
+        if(ordem != 2){
+            drops.reverse();
+            setOrdem(2);
+        }
+    }
+
+    let postInexistente = {
+        index:3,
+        titulo: "Post não encontrado :(",
+        subtitulo: 'Tente redefinir a busca ou entre em contato com a gente!',
+        data: '__/__/__',
+        srcImg: "drop1telas",
+        texto: "Infelizmente ainda não desenvolvemos uma interação com esse(s) dispositivos"
     }
 
     return (
-        <div className={styles.containerPosts}>
-            <PostInteracao 
-                srcImg="drop1telas"
-                titulo="Areia como elemento simbólico"
-                subtitulo='Captura de movimento como um meio de detectar a ação humana'
-                data='17/10/22'
-                texto="
-                    A areia, que se disperça facilmente com o vento, 
-                    foi o elemento simbólico da interação, utilizando-se da silhueta de uma pessoa como referência para possibilitar uma ação
-                    interativa com as fotografias que estão em outra camada. Esse contato, tem como significado representativo, de que a partir
-                    da presença de uma pessoa, é possível fazer um recorte no tempo e na memória, e na medida em que esse corpo ocupa esse espaço,
-                    ele segmenta a existência e a memória da vila dos pescadores.
-                    "
-                tamanhoFonte={props.tamanhoFonte} 
-                bgColor ={backgroundColor}   
-            />
-            <PostInteracao
-                srcImg="arduino"
-                titulo="Arduino e RFID"
-                subtitulo='Controle de projeção por radiofrequência'
-                data='17/10/22'
-                texto="
-                    O uso de placas de arduino e seus módulos possuem diversas utilidades, desde lâmpadas inteligentes até controladores de irrigação para jardinagem.
-                    O seu uso foi muito importante para que fosse possível alcançar o resultado desejado nos experimentos, mas mais importante que isso, criar uma ferramenta
-                    que pudesse suportar outras propostas. Para isso, foi usado dois módulos de radiofrequência (RFID RC522), conectados a uma placa de Arduino Uno, que conseguem
-                    ler quando um cartão de radiofrequência se aproxima, identificar qual cartão foi lido e qual módulo o leu, mandando a informação para outros softwares, como o
-                    TouchDesigner para mudar a imagem em uma projeção, como foi usado, ao utilizar um desses cartões dentro de um impresso 3D.
-                    "
-                tamanhoFonte={props.tamanhoFonte}
-                bgColor ={backgroundColor}   
-            />
-           <PostInteracao 
-                srcImg="concept"
-                titulo="Desenvolvimento de uma Narrativa Engajante"
-                subtitulo='Representatividade da vila do Mucuripe em narrativas'
-                data='15/09/22'
-                texto="
-                    A criação de uma narrativa para guiar o processo de desenvolvimento das nossas instalações e experiências foi um ponto importante do nosso processo. Para isso, essa história precisava ser: 
-                    Baseada em um contexto e uma problemática real, para que as experiências pudessem oferecer reflexões relevantes;
-                    Simples e abstrata, para que pudesse dar origem a muitas ideias sem fortes limitações lógicas ou estéticas. 
-                    Assim, resolvemos explorar o contexto e a cultura da vila de pescadores do Mucuripe (Fortaleza - CE), explorando a sua história e a manutenção da sua memória ameaçada pela especulação imobiliária.
-                    A história foi então dividida em 7 partes e acompanha um pescador e a sua filha, intermediada pela lenda de um peixe místico.
-                    "
-                tamanhoFonte={props.tamanhoFonte}
-                bgColor ={backgroundColor}       
-            />
+        <div className={containerPosts}>
+            <h1 style={{ fontSize: `${props.tamanhoFonte+32}px` }} className={titulo}>Interações</h1>
+            <h3 style={{ fontSize: `${props.tamanhoFonte}px` }} className={descricao}>Ao longo dos meses, desenvolvemos múltiplas interações, que, a partir do uso de determinada tecnologia, criam uma experiência única
+                para com o usuário.
+            </h3>
+            <SearchField searchBox={searchBox} setSearchBox={setSearchBox} darkMode={props.darkMode} alternarOrdem={alternarOrdem} alternarOrdem2={alternarOrdem2}/>
+            {drops.filter(post => {
+                if (searchBox === '') {
+                    return post;
+                }else if (post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())) {
+                    return post;
+                }else if(!post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || !post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())){
+                    //console.log("Objeto inexiste")
+                    //post = postInexistente;
+                    //return post 
+                }
+            }).map((post, index) => (
+                <div className={container} key={index}>
+                    <img className={style.img} src={`images/${post.srcImg}.png`}/>
+                    <div className={style.containerTexto}>
+                        <h2 
+                            style={{ fontSize: `${props.tamanhoFonte+28}px` }}
+                            className={titulo2}>
+                            {post.titulo}
+                        </h2>
+                        <h3
+                            style={{ fontSize: `${props.tamanhoFonte+8}px` }}
+                            className={subtitulo}>
+                            {post.subtitulo}
+                        </h3>
+                        <h4
+                            style={{ 
+                                fontSize: `${props.tamanhoFonte+4}px` }}
+                            className={data}>
+                            {post.data}
+                        </h4>
+                        <p 
+                            style={{ fontSize: `${props.tamanhoFonte}px` }}
+                            className={texto}>
+                            {post.texto}
+                        </p>
+                    </div>
+                </div>
+            ))}
         </div>
-    )
-}
+    );
+};

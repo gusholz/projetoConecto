@@ -27,9 +27,7 @@ export default function Home(): JSX.Element{
         }, [tamanhoFonte]); 
     }
     
-    
     const [darkMode,setDarkMode] = useState(false);
-
 
     return (
         <div>

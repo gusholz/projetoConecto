@@ -1,3 +1,13 @@
+@font-face {
+    font-family: basisGrotesqueSemiBold;
+    src: url(../../../public/fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../../../public/fonts/Lato-Regular.ttf);
+}
+
 .containerHome{
     display: flex;
     flex-direction: column;
@@ -13,12 +23,45 @@
     background-color: #FFFDF3;
 }
 
+.containerPostsBlack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #151525;
+}
+
 .containerDocumentacao{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: #FFFDF3;
+}
+
+.titulo{
+    font-family: basisGrotesqueSemiBold;
+    margin-top: 10vh;
+    color: #151525;
+}
+
+.descricao{
+    font-family: lato;
+    max-width: 40%;
+    margin-top: 3vh;
+    color: #151525;
+}
+
+.tituloBlack{
+    font-family: basisGrotesqueSemiBold;
+    margin-top: 10vh;
+    color: #FFFDF3;
+}
+
+.descricaoBlack{
+    font-family: lato;
+    max-width: 40%;
+    margin-top: 3vh;
+    color: #FFFDF3;
 }
 
 @media only screen and (max-width:800px) {
