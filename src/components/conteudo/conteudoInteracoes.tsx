@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Conteudo.module.css'
-//import style from "../conteudo/postInteracoes/postInteracao.module.css";
 import SearchField from './searchField';
 import { drops } from './drops';
 
@@ -15,6 +14,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
     let texto = `${styles.texto}`
     let containerPosts = `${styles.containerPosts}`
     let titulo = `${styles.titulo}`
+    let tituloPostInexistente = `${styles.tituloPostInexistente}`
     let descricao = `${styles.descricao}`
 
     if(props.darkMode === true){
@@ -25,6 +25,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
         texto = `${styles.textoBlack}`
         containerPosts = `${styles.containerPostsBlack}`
         titulo = `${styles.tituloBlack}`
+        tituloPostInexistente = `${styles.tituloPostInexistenteBlack}`
         descricao = `${styles.descricaoBlack}`
     }else{
         container = `${styles.containerPost}`
@@ -34,6 +35,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
         data = `${styles.data}`
         containerPosts = `${styles.containerPosts}`
         titulo = `${styles.titulo}`
+        tituloPostInexistente = `${styles.tituloPostInexistente}`    
         descricao = `${styles.descricao}`
     }
 
@@ -51,38 +53,49 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
         }
     }
 
-    let postInexistente = {
-        index:3,
-        titulo: "Post não encontrado :(",
-        subtitulo: 'Tente redefinir a busca ou entre em contato com a gente!',
-        data: '__/__/__',
-        srcImg: "drop1telas",
-        texto: "Infelizmente ainda não desenvolvemos uma interação com esse(s) dispositivos"
+    let arrayAux = drops.filter(post => {
+        if (searchBox === '') {
+            return post;
+        }else if (post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())) {
+            return post;
+        };
+    });
+
+    const jsx = (
+        <>
+            <h1 style={{ fontSize: `${props.tamanhoFonte+28}px` }} className={titulo2}>Interações</h1>
+            <h3 style={{ fontSize: `${props.tamanhoFonte}px` }} className={descricao}>Ao longo dos meses, desenvolvemos múltiplas interações, que, a partir do uso de determinada tecnologia, criam uma experiência única
+            para com o usuário.
+            </h3>
+            <SearchField searchBox={searchBox} setSearchBox={setSearchBox} darkMode={props.darkMode} alternarOrdem={alternarOrdem} alternarOrdem2={alternarOrdem2}/>
+        </>
+    );
+
+    if(arrayAux.length===0){
+        return <div className={containerPosts}>
+            {jsx}
+            <div className={container}>
+                <h2 className={tituloPostInexistente}>Infelizmente não temos uma interação com essa tecnologia ainda :(</h2>
+                <h3 className={subtitulo}>Altera o termo de busca ou entre em contato conosco!</h3>
+            </div>
+        </div>
     }
 
     return (
         <div className={containerPosts}>
-            <h1 style={{ fontSize: `${props.tamanhoFonte+32}px` }} className={titulo2}>Interações</h1>
-            <h3 style={{ fontSize: `${props.tamanhoFonte}px` }} className={descricao}>Ao longo dos meses, desenvolvemos múltiplas interações, que, a partir do uso de determinada tecnologia, criam uma experiência única
-                para com o usuário.
-            </h3>
-            <SearchField searchBox={searchBox} setSearchBox={setSearchBox} darkMode={props.darkMode} alternarOrdem={alternarOrdem} alternarOrdem2={alternarOrdem2}/>
+            {jsx}
             {drops.filter(post => {
                 if (searchBox === '') {
                     return post;
                 }else if (post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())) {
                     return post;
-                }else if(!post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || !post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())){
-                    //console.log("Objeto inexiste")
-                    //post = postInexistente;
-                    //return post 
                 }
             }).map((post, index) => (
                 <div className={container} key={index}>
                     <img className={styles.img} src={`images/${post.srcImg}.png`}/>
                     <div className={styles.containerTexto}>
                         <h2 
-                            style={{ fontSize: `${props.tamanhoFonte+28}px` }}
+                            style={{ fontSize: `${props.tamanhoFonte+24}px` }}
                             className={titulo}>
                             {post.titulo}
                         </h2>
@@ -104,7 +117,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
                         </p>
                     </div>
                 </div>
-            ))}
+            ))}           
         </div>
     );
 };

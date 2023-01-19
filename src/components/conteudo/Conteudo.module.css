@@ -116,14 +116,31 @@
     color: #FFFDF3;
 }
 
+.tituloPostInexistente{
+    margin-top: 10vh;
+    font-family: basisGrotesqueRegular;
+    color: #151525;
+    max-width: 40%;
+}
+
+.tituloPostInexistenteBlack{
+    margin-top: 10vh;
+    font-family: basisGrotesqueRegular;
+    color: #FFFDF3;
+    max-width: 40%;
+    font-size: 52px;
+}
+
 .subtitulo{
     font-family: lato;
     color: #151525;
+    margin-top: 1vh;
 }
 
 .subtituloBlack{
     font-family: lato;
     color: #FFFDF3;
+    margin-top: 1vh;
 }
 
 .data{
@@ -158,6 +175,21 @@
     
     .containerTexto{
         max-width: 80%;
+    }
+
+    .tituloPostInexistente{
+        font-size: 40px;
+        max-width: 80%;
+        color: #151525;
+    }
+
+    .subtitulo{
+        font-family: lato;
+        color: #151525;
+        max-width: 80%;
+        font-size: 20px;
+        margin-top: 1.5vh;
+        margin-bottom: 2.4vh;
     }
 
     .data{

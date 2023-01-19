@@ -10,23 +10,31 @@ export default function searchField(
     }):JSX.Element{
     
     let container = `${style.container}`
+    let search = `${style.search}`
+    let menu = `${style.menu}`
 
     if(props.darkMode === true){
         container = `${style.containerBlack}`
+        search = `${style.searchBlack}`
+        menu = `${style.menuBlack}`
     }else{
         container = `${style.container}`
+        search = `${style.search}`
+        menu = `${style.menu}`
     }
+
+    console.log(container)
 
     return (
         <div className={container}>
             <input 
-                className={style.search}
+                className={search}
                 placeholder='Procurar'
                 type='search' 
                 value={props.searchBox} 
                 onChange={e => props.setSearchBox(e.target.value)}
             />
-            <nav id={style.menu}>
+            <nav id={menu}>
                 <input type='checkbox' id='responsive-menu' /><label></label>
                 <ul>
                     <li><a className={style.dropdownArrow}>Classificar por:</a>

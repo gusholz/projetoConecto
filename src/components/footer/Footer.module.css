@@ -93,7 +93,6 @@
     color:  #FFFDF3;
     font-family: Lato;   
     font-size: 12px; 
-
 }
 
 @media only screen and (max-width:800px) {
@@ -114,7 +113,7 @@
     }
     
     .logo{
-        width: 12vh;
+        max-width: 14vh;
         height: fit-content;
         margin-top: 5%;
         margin-bottom: 5%;
@@ -129,13 +128,17 @@
     .contato{
         color:  #FFFDF3;
         font-family: LatoItalico;   
-        font-size: 1px;
+        font-size: 10px;
     }
     
     .copyright{
         margin-top: 5%;
         margin-bottom: 5%;
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
+    }
+    .desenvolvidoPor{
+        margin-top: 2vh;
+        margin-bottom: 4vh;
     }
 }

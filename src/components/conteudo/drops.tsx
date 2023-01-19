@@ -18,10 +18,10 @@ export const drops = [
     },
     {
         index:1,
-        titulo:"Desenvolvimento de uma Narrativa Engajante",
+        titulo:"Criação de uma Narrativa Engajante",
         subtitulo:'Representatividade da vila do Mucuripe em narrativas',
         data:'15/09/22',
         srcImg:"concept",
         texto:"A criação de uma narrativa para guiar o processo de desenvolvimento das nossas instalações e experiências foi um ponto importante do nosso processo. Para isso, essa história precisava ser: Baseada em um contexto e uma problemática real, para que as experiências pudessem oferecer reflexões relevantes; Simples e abstrata, para que pudesse dar origem a muitas ideias sem fortes limitações lógicas ou estéticas. Assim, resolvemos explorar o contexto e a cultura da vila de pescadores do Mucuripe (Fortaleza - CE), explorando a sua história e a manutenção da sua memória ameaçada pela especulação imobiliária. A história foi então dividida em 7 partes e acompanha um pescador e a sua filha, intermediada pela lenda de um peixe místico."
     },
-]
+];

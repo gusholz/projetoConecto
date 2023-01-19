@@ -101,6 +101,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .navMenu{
@@ -143,5 +144,22 @@
 
     .botaoDarkMode{
         display: none;
+    }
+}
+@media only screen and (max-width:400px){
+    .itemMenu a{
+        font-size: 18px;
+        margin-left: 5px;
+        opacity: .5;
+    }
+    
+    .itemMenuAtivo a{
+        color: #151525;
+        text-decoration: underline;
+        text-underline-offset: 0.3vw;
+        font-family: BasisGrotesqueRegular;
+        font-size: 18px;
+        margin-left: 2vw;
+        opacity: 1;
     }
 }

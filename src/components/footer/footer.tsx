@@ -42,7 +42,7 @@ export default function Footer(props:{darkMode:boolean}){
                 <h2 className={styles.infos}>Para mais informações:</h2>
                 <h3 className={styles.contato}>projetoconecto@institutomirante.com.br</h3>
                 <h3 className={styles.contato}>@projetoconecto</h3>
-                <h3 className={styles.desenvolvidoPor}>Site desenvolvido por Gustavo Holzmann</h3>
+                <a href="https://github.com/gusholz"><h3 className={styles.desenvolvidoPor}>Design e desenvolvimento realizado por Gustavo Holzmann</h3></a>
         </div>
     )
 }

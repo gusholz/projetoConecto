@@ -14,14 +14,15 @@ export default function Post(props: {titulo:string, texto: string, img: string, 
         titulo = `${styles.tituloBlack}`;
     }
 
-        jsx =
-            <div className={containerPai}>
-                <div className={container}>
-                    <h1 style={{ fontSize: `${props.tamanhoFonte+32}px` }} className={titulo}>{props.titulo}</h1>
-                    <p style={{ fontSize: `${props.tamanhoFonte}px` }} className={blocoTexto}>{props.texto}</p>
-                </div>
-                <img alt={props.img} className={styles.imagens} src={`images/${props.img}.png`}/>
+    jsx =(
+        <div className={containerPai}>
+            <div className={container}>
+                <h1 style={{ fontSize: `${props.tamanhoFonte+28}px` }} className={titulo}>{props.titulo}</h1>
+                <p style={{ fontSize: `${props.tamanhoFonte}px` }} className={blocoTexto}>{props.texto}</p>
             </div>
+            <img alt={props.img} className={styles.imagens} src={`images/${props.img}.png`}/>
+        </div>
+    )
 
     return (
         jsx

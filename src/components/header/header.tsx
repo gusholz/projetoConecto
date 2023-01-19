@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import styles from './Header.module.css';
 
 export default function Header(props:{ativo:number,setTamanhoFonte:Function,tamanhoFonte:number,setDarkMode,darkMode:boolean}){
