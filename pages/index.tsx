@@ -29,7 +29,6 @@ export default function Home(): JSX.Element{
     
     const [darkMode,setDarkMode] = useState(false);
 
-
     return (
         <div>
             <div>

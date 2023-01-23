@@ -41,7 +41,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
 
     return (
         <>
-            <a target="_blank" className={styles.link} href='https://www.instagram.com'><img alt='Logo do Instagram' className={styles.logo} src={`images/logoInstagram.svg`}></img></a>
+            <a className={styles.link} target="_blank" href='https://www.instagram.com'><img className={styles.logo} alt='Logo do Instagram'src={`images/logoInstagram.svg`}></img></a>
             <div className={styles.containerHome}>
                 <BlocoTextoHome 
                     titulo={blinking}

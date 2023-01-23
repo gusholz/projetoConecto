@@ -85,7 +85,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
 
     return (
         <>
-            <a target="_blank" className={styles.link} href='https://www.instagram.com'><img alt='Logo do Instagram' className={styles.logo} src={`images/logoInstagram.svg`}></img></a>
+            <a target="_blank" href='https://www.instagram.com'><img className={styles.logo} alt='Logo do Instagram'src={`images/logoInstagram.svg`}></img></a>
             <div className={containerPosts}>
                 {jsx}
                 {drops.filter(post => {
