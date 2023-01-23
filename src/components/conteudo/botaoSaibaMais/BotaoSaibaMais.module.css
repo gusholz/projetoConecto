@@ -1,0 +1,44 @@
+@font-face {
+    font-family: lato;
+    src: url(../../../../public/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: basisGrotesqueSemiBold;
+    src: url(../../../../public/fonts/BasisGrotesqueArabicPro-Medium.ttf);
+}
+
+
+.botao{
+    font-family: basisGrotesqueSemiBold;
+    background-color:#151525;
+    border-radius:28px;
+    border:1px solid #151525;
+    display:inline-block;
+    cursor:pointer;
+    color:#FFFDF3;
+    padding:1.5vh 3.5vh;
+}
+
+.botaoBlack{
+    font-family: basisGrotesqueSemiBold;
+    background-color:#FFFDF3;
+    border-radius:28px;
+    border:1px solid #FFFDF3;
+    display:inline-block;
+    cursor:pointer;
+    color:#151525;
+    padding:1.5vh 3.5vh;
+}
+
+.textoAdicional{
+    font-family: lato;
+    color: #151525;
+    margin-top: 2vh;
+}
+
+.textoAdicionalBlack{
+    font-family: lato;
+    color:#FFFDF3;
+    margin-top: 2vh;
+}

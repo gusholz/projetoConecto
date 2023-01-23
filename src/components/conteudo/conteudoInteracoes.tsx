@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import styles from './Conteudo.module.css'
 import SearchField from './searchField';
 import { drops } from './drops';
+import SaibaMais from './botaoSaibaMais/botaoSaibaMais';
+import styles from './Conteudo.module.css'
 
 export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:boolean}){
 
     const [searchBox,setSearchBox] = useState("");
+    const [visivel, setVisivel] = useState(false)
 
     let container = `${styles.containerPost}`
     let titulo2 = `${styles.titulo}`
@@ -71,7 +73,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
         </>
     );
 
-    if(arrayAux.length===0){
+    if(arrayAux.length === 0){
         return <div className={containerPosts}>
             {jsx}
             <div className={container}>
@@ -82,42 +84,51 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
     }
 
     return (
-        <div className={containerPosts}>
-            {jsx}
-            {drops.filter(post => {
-                if (searchBox === '') {
-                    return post;
-                }else if (post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())) {
-                    return post;
-                }
-            }).map((post, index) => (
-                <div className={container} key={index}>
-                    <img className={styles.img} src={`images/${post.srcImg}.png`}/>
-                    <div className={styles.containerTexto}>
-                        <h2 
-                            style={{ fontSize: `${props.tamanhoFonte+24}px` }}
-                            className={titulo}>
-                            {post.titulo}
-                        </h2>
-                        <h3
-                            style={{ fontSize: `${props.tamanhoFonte+8}px` }}
-                            className={subtitulo}>
-                            {post.subtitulo}
-                        </h3>
-                        <h4
-                            style={{ 
-                                fontSize: `${props.tamanhoFonte+4}px` }}
-                            className={data}>
-                            {post.data}
-                        </h4>
-                        <p 
-                            style={{ fontSize: `${props.tamanhoFonte}px` }}
-                            className={texto}>
-                            {post.texto}
-                        </p>
+        <>
+            <a target="_blank" className={styles.link} href='https://www.instagram.com'><img alt='Logo do Instagram' className={styles.logo} src={`images/logoInstagram.svg`}></img></a>
+            <div className={containerPosts}>
+                {jsx}
+                {drops.filter(post => {
+                    if (searchBox === '') {
+                        return post;
+                    }else if (post.titulo.toLowerCase().includes(searchBox.toLowerCase()) || post.subtitulo.toLowerCase().includes(searchBox.toLowerCase())) {
+                        return post;
+                    }
+                }).map((post, index) => (
+                    <div className={container} key={index}>
+                        <img className={styles.img} src={`images/${post.srcImg}.png`}/>
+                        <div className={styles.containerTexto}>
+                            <h2 
+                                style={{ fontSize: `${props.tamanhoFonte+24}px` }}
+                                className={titulo}>
+                                {post.titulo}
+                            </h2>
+                            <h3
+                                style={{ fontSize: `${props.tamanhoFonte+8}px` }}
+                                className={subtitulo}>
+                                {post.subtitulo}
+                            </h3>
+                            <h4
+                                style={{fontSize: `${props.tamanhoFonte+4}px` }}
+                                className={data}>
+                                {post.data}
+                            </h4>
+                            <p 
+                                style={{ fontSize: `${props.tamanhoFonte}px` }}
+                                className={texto}>
+                                {post.texto}
+                            </p>
+                            <SaibaMais 
+                                visivel={visivel}
+                                tamanhoFonte={props.tamanhoFonte}
+                                darkMode={props.darkMode}
+                                setVisivel={setVisivel}
+                                index = {post.index}
+                            />
+                        </div>
                     </div>
-                </div>
-            ))}           
-        </div>
+                ))}           
+            </div>
+        </>
     );
 };

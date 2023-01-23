@@ -2,9 +2,9 @@ import style from './SearchField.module.css'
 
 export default function searchField(
     props:{
-        darkMode:boolean,
+        darkMode: boolean,
         setSearchBox: any,
-        searchBox:string,
+        searchBox: string,
         alternarOrdem,
         alternarOrdem2
     }):JSX.Element{
@@ -22,8 +22,6 @@ export default function searchField(
         search = `${style.search}`
         menu = `${style.menu}`
     }
-
-    console.log(container)
 
     return (
         <div className={container}>

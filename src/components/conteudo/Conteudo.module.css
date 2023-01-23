@@ -167,6 +167,19 @@
     color: #FFFDF3;
 }
 
+
+.logo{
+    position: sticky;
+    top: 90%;
+    left: 90%;
+    max-width: 4%;
+    opacity: 60%;
+}
+
+.link :hover{
+    transition: 0.5s ease-in-out;
+    opacity: 100%;
+}
 @media only screen and (max-width:800px) {
     .img{
         width: 100%;
@@ -194,5 +207,13 @@
 
     .data{
         margin-top: 1%;
+    }
+
+    .logo{
+        position: sticky;
+        top: 90%;
+        left: 90%;
+        max-width: 8%;
+        opacity: 60%;
     }
 }
