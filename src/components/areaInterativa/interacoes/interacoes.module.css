@@ -61,7 +61,7 @@
     position: relative;
     top: -8vh;
     width: 100px;
-    padding:2vh;
+    height: fit-content;
     display: flex;
     animation-name: bounceSetaP5;
     animation-duration: 2s;
@@ -75,8 +75,8 @@
 }
 
 @keyframes bounceSetaP5{
-    from {top: -8vh;}
-    to{top: -12vh;}
+    from {top: -6vh;}
+    to{top: -10vh;}
 }
 
 .logoInterativa{

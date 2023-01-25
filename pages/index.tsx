@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from '../src/components/header/header';
 import Footer from '../src/components/footer/footer';
 import ConteudoHome from '../src/components/conteudo/conteudoHome';

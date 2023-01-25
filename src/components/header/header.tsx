@@ -51,9 +51,9 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
                     <button className={`${interacoes}`}><a href='/interacoes'>Interações</a></button>
                     <button className={`${documentacao}`}><a href='/documentacao'>Documentação</a></button>
                     <div className={styles.containerBotaoFonte}>
-                        <a className={styles.botaoMudar} onClick={handleIncrease}><img className={styles.botaoFonte} src={'images/A+.png'}/></a>
-                        <a className={styles.botaoMudar} onClick={handleDecrease}><img className={styles.botaoFonte} src={'images/a-.png'}/></a>
-                        <a className={styles.botaoDarkMode} onClick={handleChange}><img className={styles.botaoDarkMode} src={'images/darkModeIcon.svg'}/></a>
+                        <a className={styles.botaoMudar} onClick={handleIncrease}><img alt='' className={styles.botaoFonte} src={'images/A+.png'}/></a>
+                        <a className={styles.botaoMudar} onClick={handleDecrease}><img alt='' className={styles.botaoFonte} src={'images/a-.png'}/></a>
+                        <a className={styles.botaoDarkMode} onClick={handleChange}><img alt='' className={styles.botaoDarkMode} src={'images/darkModeIcon.svg'}/></a>
                     </div>
                 </menu>
             </div>

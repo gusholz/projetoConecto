@@ -23,11 +23,11 @@ export default function Footer(props:{darkMode:boolean}){
     return (
         <div className={containerPai}>           
                 <div className={styles.containerImagens}>
-                    <img className={styles.logo} src={`images/logoMis.png`} />
-                    <img className={styles.logo} src={`images/logoLed.png`} />
-                    <img className={styles.logo} src={`images/logoCelula.png`} />
-                    <img className={styles.logo} src={`images/logoMirante.png`} />
-                    <img className={styles.logo} src={`images/logoGov.png`} />
+                    <img alt="Logo MIS" className={styles.logo} src={`images/logoMis.avif`} />
+                    <img alt="Logo LED" className={styles.logo} src={`images/logoLed.avif`} />
+                    <img alt="Logo Célula Multimídia" className={styles.logo} src={`images/logoCelula.avif`} />
+                    <img alt="Logo Instituto Mirante" className={styles.logo} src={`images/logoMirante.avif`} />
+                    <img alt="Logo Governo do Estado do Ceará" className={styles.logo} src={`images/logoGov.avif`} />
                 </div>
                 <div className={container}>
                     <p className={styles.copyright}>
