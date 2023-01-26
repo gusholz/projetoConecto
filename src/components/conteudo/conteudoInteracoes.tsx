@@ -96,7 +96,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
                     }
                 }).map((post, index) => (
                     <div className={container} key={index}>
-                        <img className={styles.img} src={`images/${post.srcImg}.png`}/>
+                        <img className={styles.img} src={`images/${post.srcImg}.avif`}/>
                         <div className={styles.containerTexto}>
                             <h2 
                                 style={{ fontSize: `${props.tamanhoFonte+24}px` }}
