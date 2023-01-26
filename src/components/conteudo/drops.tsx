@@ -7,7 +7,7 @@ export const drops = [
         data: '17/10/22',
         srcImg: "drop1telas",
         texto: "A areia, que se disperça facilmente com o vento,foi o elemento simbólico da interação, utilizando-se da silhueta de uma pessoa como referência para possibilitar uma ação rativa com as fotografias que estão em outra camada. Esse contato, tem como significado representativo, de que a partir da presença de uma pessoa, é possível fazer um recorte no tempo e na memória, e na medida em que esse corpo ocupa esse espaço, ele segmenta a existência e a memória da vila dos pescadores.",
-        textoAdicional: "Principal artigo que fundamentou a proposta: https://ieeexplore.ieee.org/document/8603589"                  
+        textoAdicional: "Principal artigo que fundamentou a proposta: ieeexplore.ieee.org/document/ 8603589"                  
     },
     {
         index:1,

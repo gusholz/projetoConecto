@@ -96,12 +96,12 @@
     
     .container{
         flex-direction: column;
-        max-width: 80%;
+        max-width: 89%;
     }
 
     .containerBlack{
         flex-direction: column;
-        max-width: 80%;
+        max-width: 89%;
     }
     
     .texto{

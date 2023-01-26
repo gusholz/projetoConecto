@@ -19,7 +19,6 @@ export default function Footer(props:{darkMode:boolean}){
         container = `${styles.container}`
     }
 
-
     return (
         <div className={containerPai}>           
                 <div className={styles.containerImagens}>

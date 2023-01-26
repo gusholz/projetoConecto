@@ -79,7 +79,7 @@
 
 .descricao{
     font-family: lato;
-    max-width: 40%;
+    max-width: 50%;
     margin-top: 3vh;
     color: #151525;
 }
@@ -156,7 +156,7 @@
 .texto{
     font-family: lato;
     margin-top: 1vh;
-    margin-bottom: 1vw;
+    margin-bottom: 3vh;
     color: #151525;
 }
 
@@ -169,7 +169,7 @@
 
 .logo{
     position: fixed;
-    max-width: 4%;
+    max-width: 8%;
     top: 90%;
     left: 86%;
     opacity: 60%;
@@ -199,7 +199,6 @@
     .subtitulo{
         font-family: lato;
         color: #151525;
-        max-width: 80%;
         font-size: 20px;
         margin-top: 1.5vh;
         margin-bottom: 2.4vh;

@@ -82,7 +82,7 @@
 .logoInterativa{
     font-family: BasisGrotesqueSemiBold;
     color:#151525;
-    font-size: 6vw;
+    font-size: 12vw;
     position: absolute;
     transform:translateY(-2vh);
 }
@@ -96,5 +96,6 @@
 
     .setaP5{
         width: 80px;
+        transform: translateY(-3vh);
     }
 }

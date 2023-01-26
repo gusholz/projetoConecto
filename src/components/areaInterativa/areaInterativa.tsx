@@ -34,7 +34,7 @@ export default function AreaInterativa(){
     return(
             <div className={styles.areaInteracao}>
                 {seletorInteracao}
-                <img onClick={proximoElemento} alt="" className={seletorSeta} src={`images/seta.png`} />
+                <img onClick={proximoElemento} alt="" className={seletorSeta} src={`images/seta.avif`} />
             </div>
     )
 }
