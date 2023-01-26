@@ -169,7 +169,7 @@
 
 .logo{
     position: fixed;
-    max-width: 8%;
+    max-width: 4%;
     top: 90%;
     left: 86%;
     opacity: 60%;
@@ -206,5 +206,9 @@
 
     .data{
         margin-top: 1%;
+    }
+
+    .logo{
+        max-width: 8%;
     }
 }
