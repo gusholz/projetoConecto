@@ -42,8 +42,8 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <img alt='Logo projeto Conecto' className={styles.logo} src={`images/vetorLogoConecto.avif`} id="logo"/>
-                <a href='/'><img alt='Co.necto' className={styles.conecto} src={`images/conecto2.avif`}/></a>
+                <img alt='Logo projeto Conecto' className={styles.logo} src={`images/vetorLogoConecto.webp`} id="logo"/>
+                <a href='/'><img alt='Co.necto' className={styles.conecto} src={`images/conecto2.webp`}/></a>
             </div>
             <div>
                 <menu className={styles.navMenu}>
@@ -51,8 +51,8 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
                     <button className={`${interacoes}`}><a href='/interacoes'>Interações</a></button>
                     <button className={`${documentacao}`}><a href='/documentacao'>Documentação</a></button>
                     <div className={styles.containerBotaoFonte}>
-                        <a className={styles.botaoMudar} onClick={handleIncrease}><img alt='' className={styles.botaoFonte} src={'images/a.avif'}/></a>
-                        <a className={styles.botaoMudar} onClick={handleDecrease}><img alt='' className={styles.botaoFonte} src={'images/a-.avif'}/></a>
+                        <a className={styles.botaoMudar} onClick={handleIncrease}><img alt='' className={styles.botaoFonte} src={'images/a.webp'}/></a>
+                        <a className={styles.botaoMudar} onClick={handleDecrease}><img alt='' className={styles.botaoFonte} src={'images/a-.webp'}/></a>
                         <a className={styles.botaoDarkMode} onClick={handleChange}><img alt='' className={styles.botaoDarkMode} src={'images/darkModeIcon.svg'}/></a>
                     </div>
                 </menu>
