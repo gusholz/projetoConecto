@@ -31,10 +31,16 @@ export default function Interacoes(): JSX.Element{
     return (
         <div>
             <Head>
-                <title>Interações Co.necto</title>
-                <meta name="viewport" content="width=device-width"></meta>
-                <meta name="Descrição" content="Interações desenvolvidas para o Museu da Imagem e do Som do Ceará (MIS-CE) pelo Projeto Conecto"/>
-                <meta charSet='UTF-8'/>
+            <Head>
+                <meta name="title" content="Interações Conecto"></meta>
+                <meta name="description" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará (MIS-CE) que tem como missão tornar a experiência museológica interativa"></meta>
+                <meta name="keywords" content="museus, interação, universidade federal do ceará, tecnologia"></meta>
+                <meta name="robots" content="index, follow"></meta>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+                <meta name="language" content="Portuguese"></meta>
+                <meta name="revisit-after" content="10 days"></meta>
+                <meta name="author" content="Gustavo Holzmann"></meta>
+            </Head>
             </Head>
             <div>
                 <Header darkMode={darkMode}  setDarkMode={setDarkMode} tamanhoFonte={tamanhoFonte} setTamanhoFonte={setTamanhoFonte} ativo={2}/>

@@ -34,10 +34,14 @@ export default function Home(): JSX.Element{
         <>
             <div>
             <Head>
-                <title>Co.necto</title>
-                <meta name="viewport" content="width=device-width"></meta>
-                <meta name="Descrição" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará (MIS-CE) que tem como missão tornar a experiência museulógica interativa"/>
-                <meta charSet='UTF-8'/>
+                <meta name="title" content="Projeto Conecto"></meta>
+                <meta name="description" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará (MIS-CE) que tem como missão tornar a experiência museológica interativa"></meta>
+                <meta name="keywords" content="museus, interação, universidade federal do ceará, tecnologia"></meta>
+                <meta name="robots" content="index, follow"></meta>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+                <meta name="language" content="Portuguese"></meta>
+                <meta name="revisit-after" content="10 days"></meta>
+                <meta name="author" content="Gustavo Holzmann"></meta>
             </Head>
                 <div>
                     <AreaInterativa/>
