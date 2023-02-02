@@ -34,7 +34,7 @@ export default function Home(): JSX.Element{
         <>
             <div>
             <Head>
-                <meta name="title" content="Projeto Conecto"></meta>
+                <title>Projeto Conecto </title>
                 <meta name="description" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará (MIS-CE) que tem como missão tornar a experiência museológica interativa"></meta>
                 <meta name="keywords" content="museus, interação, universidade federal do ceará, tecnologia"></meta>
                 <meta name="robots" content="index, follow"></meta>
