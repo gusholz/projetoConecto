@@ -34,7 +34,6 @@ export default function Home(): JSX.Element{
         <>
             <div>
             <Head>
-                <html lang='pt-BR'></html>
                 <title>Co.necto</title>
                 <meta name="viewport" content="width=device-width"></meta>
                 <meta name="Descrição" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará (MIS-CE) que tem como missão tornar a experiência museulógica interativa"/>

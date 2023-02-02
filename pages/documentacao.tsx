@@ -31,7 +31,6 @@ export default function Documentacao(): JSX.Element{
     return (
         <div>
             <Head>
-                <html lang='pt-BR'></html>
                 <title>Documentação Conecto</title>
                 <meta name="viewport" content="width=device-width"></meta>
                 <meta name="Descrição" content="Projeto vinculado ao Museu da Imagem e do Som do Ceará que tem como missão tornar a experiência museulógica interativa"/>

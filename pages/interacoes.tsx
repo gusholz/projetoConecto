@@ -31,7 +31,6 @@ export default function Interacoes(): JSX.Element{
     return (
         <div>
             <Head>
-                <html lang='pt-BR'></html>
                 <title>Interações Co.necto</title>
                 <meta name="viewport" content="width=device-width"></meta>
                 <meta name="Descrição" content="Interações desenvolvidas para o Museu da Imagem e do Som do Ceará (MIS-CE) pelo Projeto Conecto"/>
