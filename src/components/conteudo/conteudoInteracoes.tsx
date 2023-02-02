@@ -3,11 +3,13 @@ import SearchField from './searchField';
 import { drops } from './drops';
 import SaibaMais from './botaoSaibaMais/botaoSaibaMais';
 import styles from './Conteudo.module.css'
+import Link from 'next/link';
 
 export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:boolean}){
 
-    const [searchBox,setSearchBox] = useState("");
-    const [visivel, setVisivel] = useState(false)
+    const [searchBox,setSearchBox] = useState('');
+    const [visivel, setVisivel] = useState(false);
+    const [ordem,setOrdem] = useState(1);
 
     let container = `${styles.containerPost}`
     let titulo2 = `${styles.titulo}`
@@ -41,7 +43,6 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
         descricao = `${styles.descricao}`
     }
 
-    const [ordem,setOrdem] = useState(1);
     const alternarOrdem = () =>{
         if(ordem != 1){
             drops.reverse();
@@ -85,7 +86,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
 
     return (
         <>
-            <a target="_blank" href='https://www.instagram.com'><img className={styles.logo} alt='Logo do Instagram'src={`images/logoInstagram.svg`}></img></a>
+            <Link href='https://www.instagram.com'><a target='_blank'><img className={styles.logo} alt='Logo do Instagram'src={`images/logoInstagram.svg`}></img></a></Link>
             <div className={containerPosts}>
                 {jsx}
                 {drops.filter(post => {

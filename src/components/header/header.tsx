@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
+import Link from 'next/link'
 
 export default function Header(props:{ativo:number,setTamanhoFonte:Function,tamanhoFonte:number,setDarkMode,darkMode:boolean}){
 
@@ -21,8 +22,7 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
             if(props.tamanhoFonte<28){
                 props.setTamanhoFonte(prevFontSize => prevFontSize + 2);
             }
-      
-        }
+        };
 
         const handleDecrease = () => {
             if(props.tamanhoFonte>18){
@@ -43,13 +43,13 @@ export default function Header(props:{ativo:number,setTamanhoFonte:Function,tama
         <div className={styles.header}>
             <div className={styles.container}>
                 <img alt='Logo projeto Conecto' className={styles.logo} src={`images/vetorLogoConecto.webp`} id="logo"/>
-                <a href='/'><img alt='Co.necto' className={styles.conecto} src={`images/conecto2.webp`}/></a>
+                <Link href='/'><a><img alt='Co.necto' className={styles.conecto} src={`images/conecto2.webp`}/></a></Link>
             </div>
             <div>
                 <menu className={styles.navMenu}>
-                    <button className={`${home}`}><a href='/'>Home</a></button>
-                    <button className={`${interacoes}`}><a href='/interacoes'>Interações</a></button>
-                    <button className={`${documentacao}`}><a href='/documentacao'>Documentação</a></button>
+                    <button className={`${home}`}><Link href="/">Home</Link></button>
+                    <button className={`${interacoes}`}><Link href="/interacoes">Interações</Link></button>
+                    <button className={`${documentacao}`}><Link href="/documentacao">Documentação</Link></button>
                     <div className={styles.containerBotaoFonte}>
                         <a className={styles.botaoMudar} onClick={handleIncrease}><img alt='' className={styles.botaoFonte} src={'images/a.webp'}/></a>
                         <a className={styles.botaoMudar} onClick={handleDecrease}><img alt='' className={styles.botaoFonte} src={'images/a-.webp'}/></a>

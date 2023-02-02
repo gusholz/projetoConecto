@@ -14,9 +14,9 @@ export default function searchField(
     let menu = `${style.menu}`
 
     if(props.darkMode === true){
-        container = `${style.containerBlack}`
-        search = `${style.searchBlack}`
-        menu = `${style.menuBlack}`
+        container = container+'Black'
+        search = search+'Black'
+        menu = menu+'Black'
     }else{
         container = `${style.container}`
         search = `${style.search}`

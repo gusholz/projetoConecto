@@ -7,13 +7,12 @@ export default function SaibaMais(props:{visivel:boolean,tamanhoFonte:number,dar
     let textoAdicional = `${styles.textoAdicional}`
 
     if(props.darkMode === true){
-        botao = `${styles.botaoBlack}`
-        textoAdicional = `${styles.textoAdicionalBlack}`
+        botao = botao+"Black";
+        textoAdicional = textoAdicional+"Black";
     }else{
-        botao = `${styles.botao}`
-        textoAdicional = `${styles.textoAdicional}`
+        botao = `${styles.botao}`;
+        textoAdicional = `${styles.textoAdicional}`;
     }
-
 
     const jsx = (
         <button style={{ fontSize: `${props.tamanhoFonte}px`}} className={botao} onClick={()=>{props.setVisivel(!(props.visivel))}}> 

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Head from 'next/head';
 import Header from '../src/components/header/header';
 import Footer from '../src/components/footer/footer';
 import ConteudoInteracoes from '../src/components/conteudo/conteudoInteracoes';
@@ -29,6 +30,13 @@ export default function Interacoes(): JSX.Element{
 
     return (
         <div>
+            <Head>
+                <html lang='pt-BR'></html>
+                <title>Interações Co.necto</title>
+                <meta name="viewport" content="width=device-width"></meta>
+                <meta name="Descrição" content="Interações desenvolvidas para o Museu da Imagem e do Som do Ceará (MIS-CE) pelo Projeto Conecto"/>
+                <meta charSet='UTF-8'/>
+            </Head>
             <div>
                 <Header darkMode={darkMode}  setDarkMode={setDarkMode} tamanhoFonte={tamanhoFonte} setTamanhoFonte={setTamanhoFonte} ativo={2}/>
                 <ConteudoInteracoes darkMode={darkMode} tamanhoFonte={tamanhoFonte}/>
