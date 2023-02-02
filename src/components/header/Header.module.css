@@ -46,15 +46,11 @@
     align-items: center;
 }
 
-.itemMenu{
-    margin-left: 2vw;
-}
-
 .itemMenu a{
     color: #151525;
     font-family: BasisGrotesqueRegular;
     font-size: 30px;
-    margin-left: 5px;
+    margin-left: 2vw;
     opacity: .5;
 }
 
