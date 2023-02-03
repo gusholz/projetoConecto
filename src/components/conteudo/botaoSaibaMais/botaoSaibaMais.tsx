@@ -8,7 +8,7 @@ export default function SaibaMais(props:{visivel:boolean,tamanhoFonte:number,dar
 
     if(props.darkMode === true){
         botao = `${styles.botaoBlack}`
-        textoAdicional = `${styles.textoAdicional}`
+        textoAdicional = `${styles.textoAdicionalBlack}`
     }else{
         botao = `${styles.botao}`;
         textoAdicional = `${styles.textoAdicional}`;
