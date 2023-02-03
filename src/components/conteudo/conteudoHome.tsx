@@ -45,7 +45,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
                     Na atualidade, é evidente o entrelaçamento da tecnologia em diversos aspectos do cotidiano. A contextualização desse fenômeno revela questionamentos sobre a tangibilidade e as aplicações das interfaces digitais em relação ao comportamento humano. 
                     Nesse sentido, o projeto Conecto, vinculado ao Museu da Imagem do Som do Ceará (MIS-CE) e a Universidade Federal do Ceará
                     (UFC) se materializa a partir dessas reflexões, compreendendo a capacidade dos museus de provocar experiências multissensoriais
-                    que relacionam aspectos subjetivos, evidenciando dramas e dilemas essencialmente humanos – para além de enfoques meramente racionais,
+                    que relacionam aspectos subjetivos, evidenciando dramas e dilemas essencialmente humanos - para além de enfoques meramente racionais,
                     intencionamos investigar o museu como espaço de criação de narrativas colaborativas com os visitantes.
                 </BlocoTextoHome>
                 <BlocoTextoHome titulo= {blinking2} img= 'interacaoProjecao' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte}>
