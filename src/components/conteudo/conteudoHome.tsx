@@ -41,7 +41,7 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
         <>
             <Link href='https://www.instagram.com'><a className={styles.link} target="_blank"><img className={styles.logo} alt='Link do Instagram do projeto Co.necto'src={`images/logoInstagram.svg`}></img></a></Link>
             <div className={styles.containerHome}>
-                <BlocoTextoHome titulo= {blinking} img= 'membrosConecto'bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte} >
+                <BlocoTextoHome titulo= {blinking} img= 'membrosConecto' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte} >
                     Na atualidade, é evidente o entrelaçamento da tecnologia em diversos aspectos do cotidiano. A contextualização desse fenômeno revela questionamentos sobre a tangibilidade e as aplicações das interfaces digitais em relação ao comportamento humano. 
                     Nesse sentido, o projeto Conecto, vinculado ao Museu da Imagem do Som do Ceará (MIS-CE) e a Universidade Federal do Ceará
                     (UFC) se materializa a partir dessas reflexões, compreendendo a capacidade dos museus de provocar experiências multissensoriais

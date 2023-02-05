@@ -11,38 +11,6 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
     const [visivel, setVisivel] = useState(false);
     const [ordem,setOrdem] = useState(1);
 
-    let container = `${styles.containerPost}`
-    let titulo2 = `${styles.titulo}`
-    let subtitulo = `${styles.subtitulo}`
-    let data = `${styles.data}`
-    let texto = `${styles.texto}`
-    let containerPosts = `${styles.containerPosts}`
-    let titulo = `${styles.titulo}`
-    let tituloPostInexistente = `${styles.tituloPostInexistente}`
-    let descricao = `${styles.descricao}`
-
-    if(props.darkMode === true){
-        container = `${styles.containerPostBlack}`
-        titulo2 = `${styles.tituloBlack2}`;
-        subtitulo = `${styles.subtituloBlack}`;
-        data = `${styles.dataBlack}`;
-        texto = `${styles.textoBlack}`
-        containerPosts = `${styles.containerPostsBlack}`
-        titulo = `${styles.tituloBlack}`
-        tituloPostInexistente = `${styles.tituloPostInexistenteBlack}`
-        descricao = `${styles.descricaoBlack}`
-    }else{
-        container = `${styles.containerPost}`
-        titulo2 = `${styles.titulo2}`
-        subtitulo = `${styles.subtitulo}`
-        data = `${styles.data}`
-        data = `${styles.data}`
-        containerPosts = `${styles.containerPosts}`
-        titulo = `${styles.titulo}`
-        tituloPostInexistente = `${styles.tituloPostInexistente}`    
-        descricao = `${styles.descricao}`
-    }
-
     const alternarOrdem = () =>{
         if(ordem != 1){
             drops.reverse();
@@ -66,8 +34,8 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
 
     const jsx = (
         <>
-            <h1 style={{ fontSize: `${props.tamanhoFonte+28}px` }} className={titulo2}>Interações</h1>
-            <h3 style={{ fontSize: `${props.tamanhoFonte}px` }} className={descricao}>Ao longo dos meses, desenvolvemos múltiplas interações, que, a partir do uso de determinada tecnologia, criam uma experiência única
+            <h1 style={{ fontSize: `${props.tamanhoFonte+28}px` }} className={props.darkMode ? `${styles.tituloBlack2}` : `${styles.titulo2}` }>Interações</h1>
+            <h3 style={{ fontSize: `${props.tamanhoFonte}px` }} className={props.darkMode ? `${styles.descricaoBlack}` : `${styles.descricao}`}>Ao longo dos meses, desenvolvemos múltiplas interações, que, a partir do uso de determinada tecnologia, criam uma experiência única
             para com o usuário.
             </h3>
             <SearchField searchBox={searchBox} setSearchBox={setSearchBox} darkMode={props.darkMode} alternarOrdem={alternarOrdem} alternarOrdem2={alternarOrdem2}/>
@@ -75,11 +43,11 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
     );
 
     if(arrayAux.length === 0){
-        return <div className={containerPosts}>
+        return <div className={props.darkMode ? `${styles.containerPostBlack}` : `${styles.containerPost}`}>
             {jsx}
-            <div className={container}>
-                <h2 className={tituloPostInexistente}>Infelizmente não temos uma interação com essa tecnologia ainda :(</h2>
-                <h3 className={subtitulo}>Altera o termo de busca ou entre em contato conosco!</h3>
+            <div className={props.darkMode? `${styles.containerPostsBlack}` : `${styles.containerPosts}`}>
+                <h2 style={{ fontSize: `${props.tamanhoFonte+24}px` }}  className={props.darkMode ? `${styles.tituloPostInexistenteBlack}` : `${styles.tituloPostInexistente}`}>Infelizmente não temos uma interação com essa tecnologia ainda :(</h2>
+                <h3 style={{ fontSize: `${props.tamanhoFonte+8}px` }} className={props.darkMode ? `${styles.subtituloBlack}` : `${styles.subtitulo}`}>Altera o termo de busca ou entre em contato conosco!</h3>
             </div>
         </div>
     }
@@ -87,7 +55,7 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
     return (
         <>
             <Link href='https://www.instagram.com'><a target='_blank'><img className={styles.logo} alt='Logo do Instagram'src={`images/logoInstagram.svg`}></img></a></Link>
-            <div className={containerPosts}>
+            <div className={props.darkMode ? `${styles.PostsBlack}` : `${styles.Posts}`}>
                 {jsx}
                 {drops.filter(post => {
                     if (searchBox === '') {
@@ -96,27 +64,27 @@ export default function ConteudoInteracoes(props:{tamanhoFonte:number,darkMode:b
                         return post;
                     }
                 }).map((post, index) => (
-                    <div className={container} key={index}>
+                    <div className={props.darkMode? `${styles.containerPostBlack}` : `${styles.containerPost}`} key={index}>
                         <img alt={post.textoDescritivoImagem} className={styles.img} src={`images/${post.srcImg}.webp`}/>
                         <div className={styles.containerTexto}>
                             <h2 
                                 style={{ fontSize: `${props.tamanhoFonte+24}px` }}
-                                className={titulo}>
+                                className={props.darkMode ? `${styles.tituloBlack}` : `${styles.titulo}`}>
                                 {post.titulo}
                             </h2>
                             <h3
                                 style={{ fontSize: `${props.tamanhoFonte+8}px` }}
-                                className={subtitulo}>
+                                className={props.darkMode? `${styles.subtituloBlack}` : `${styles.subtitulo}`}>
                                 {post.subtitulo}
                             </h3>
                             <h4
                                 style={{fontSize: `${props.tamanhoFonte+4}px` }}
-                                className={data}>
+                                className={props.darkMode? `${styles.dataBlack}` : `${styles.data}`}>
                                 {post.data}
                             </h4>
                             <p 
                                 style={{ fontSize: `${props.tamanhoFonte}px` }}
-                                className={texto}>
+                                className={props.darkMode? `${styles.textoBlack}` : `${styles.texto}`}>
                                 {post.texto}
                             </p>
                             <SaibaMais 

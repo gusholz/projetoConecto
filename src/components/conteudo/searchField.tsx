@@ -9,30 +9,16 @@ export default function searchField(
         alternarOrdem2
     }):JSX.Element{
     
-    let container = `${style.container}`
-    let search = `${style.search}`
-    let menu = `${style.menu}`
-
-    if(props.darkMode === true){
-        container = `${style.containerBlack}`
-        search = `${style.searchBlack}`
-        menu = `${style.menuBlack}`
-    }else{
-        container = `${style.container}`
-        search = `${style.search}`
-        menu = `${style.menu}`
-    }
-
     return (
-        <div className={container}>
+        <div className={props.darkMode ? `${style.containerBlack}` : `${style.container}`}>
             <input 
-                className={search}
+                className={props.darkMode ? `${style.searchBlack}` : `${style.search}`}
                 placeholder='Procurar'
                 type='search' 
                 value={props.searchBox} 
                 onChange={e => props.setSearchBox(e.target.value)}
             />
-            <nav id={menu}>
+            <nav id={props.darkMode ? `${style.menuBlack}` : `${style.menu}` }>
                 <input type='checkbox' id='responsive-menu' /><label></label>
                 <ul>
                     <li><a className={style.dropdownArrow}>Classificar por:</a>

@@ -3,25 +3,8 @@ import styles from "./Footer.module.css"
 
 export default function Footer(props:{darkMode:boolean}){
 
-    let containerPai = `${styles.containerPai}`
-    let container = `${styles.container}`
-    let bgColor = 0;
-
-    if(props.darkMode ===true){
-        bgColor = 1;
-    }else{
-        bgColor = 0;
-    }
-    if(bgColor===1){
-        containerPai = `${styles.containerPaiBlack}`
-        container = `${styles.containerBlack}`
-    }else{
-        containerPai = `${styles.containerPai}`
-        container = `${styles.container}`
-    }
-
     return (
-        <div className={containerPai}>           
+        <div className={props.darkMode ? `${styles.containerPaiBlack}` : `${styles.containerPai}`}>           
                 <div className={styles.containerImagens}>
                     <img alt="Logo MIS" className={styles.logo} src={`images/logoMis.webp`} />
                     <img alt="Logo LED" className={styles.logo} src={`images/logoLed.webp`} />
@@ -29,7 +12,7 @@ export default function Footer(props:{darkMode:boolean}){
                     <img alt="Logo Instituto Mirante" className={styles.logo} src={`images/logoMirante.webp`} />
                     <img alt="Logo Governo do Estado do Ceará" className={styles.logo} src={`images/logoGov.webp`} />
                 </div>
-                <div className={container}>
+                <div className={props.darkMode ? `${styles.containerBlack}` : `${styles.container}`}>
                     <p className={styles.copyright}>
                         O projeto Co.necto é vinculado ao Museu da Imagem e do Som, instituição pública
                         regida pelo Instituto Mirante de Cultura e Arte.
