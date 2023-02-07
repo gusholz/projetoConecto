@@ -107,14 +107,9 @@
         flex-wrap: wrap;
     }
     
-    .logoMis{
-        width: 16vh;
-        height: fit-content;
-    }
-    
     .logo{
         max-width: 14vh;
-        height: fit-content;
+        max-height: 5vh;
         margin-top: 5%;
         margin-bottom: 5%;
     }
