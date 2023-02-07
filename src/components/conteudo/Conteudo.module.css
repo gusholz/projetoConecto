@@ -101,7 +101,7 @@
 
 .img{
     width: 40%;
-    height: fit-content;
+    max-height: 40%;
 }
 
 .containerTexto{
