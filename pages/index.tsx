@@ -5,7 +5,6 @@ import Footer from '../src/components/footer/footer';
 import ConteudoHome from '../src/components/conteudo/conteudoHome';
 import AreaInterativa from '../src/components/areaInterativa/areaInterativa';
 import '@nextcss/reset';
-import Link from 'next/link';
 
 export default function Home(): JSX.Element{
 

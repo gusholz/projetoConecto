@@ -50,8 +50,9 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
                 </BlocoTextoHome>
                 <BlocoTextoHome titulo= {blinking2} img= 'interacaoProjecao' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte}>
                     Ao se utilizar de diversos recursos tecnológicos como a realidade aumentada, a captação de movimento, 
-                    a captação de som, a projeção, dentre tantos outros, nossa equipe multidisciplinar de programadores, designers, arquitetos e storytellers almeja criar uma experiência
-                    interativa única com os usuários no ambiente museulógico do MIS, mas também fora dele, levando essas interações para áreas não habituadas a utilizar estas tecnologias"     
+                    a captação de som, a projeção, dentre tantos outros, nossa equipe multidisciplinar composta de dez membros dos cursos de design, arquitetura, cinema e sistemas e mídias
+                    digitais almeja criar uma experiência interativa única com os usuários no ambiente museulógico do MIS, mas também fora
+                    dele, levando essas interações para áreas não habituadas a utilizar estas tecnologias"     
                 </BlocoTextoHome>
                 <BlocoTextoHome titulo= "Para Quem?" img= 'procisaoSaoPedro' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte}>
                     Desde o início, com base na nossa proposta, buscamos alcançar toda as regiões da cidade de Fortaleza, especialmente aquelas em que a população está menos habituados a se utilizar
