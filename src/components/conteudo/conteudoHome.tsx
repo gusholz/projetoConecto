@@ -42,17 +42,16 @@ export default function ConteudoHome(props:{tamanhoFonte:number,darkMode:boolean
             <Link href='https://www.instagram.com'><a className={styles.link} target="_blank"><img className={styles.logo} alt='Link do Instagram do projeto Co.necto'src={`images/logoInstagram.svg`}></img></a></Link>
             <div className={styles.containerHome}>
                 <BlocoTextoHome titulo= {blinking} img= 'membrosConecto' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte} >
-                    Na atualidade, é evidente o entrelaçamento da tecnologia em diversos aspectos do cotidiano. A contextualização desse fenômeno revela questionamentos sobre a tangibilidade e as aplicações das interfaces digitais em relação ao comportamento humano. 
-                    Nesse sentido, o projeto Conecto, vinculado ao Museu da Imagem do Som do Ceará (MIS-CE) e a Universidade Federal do Ceará
-                    (UFC) se materializa a partir dessas reflexões, compreendendo a capacidade dos museus de provocar experiências multissensoriais
-                    que relacionam aspectos subjetivos, evidenciando dramas e dilemas essencialmente humanos - para além de enfoques meramente racionais,
-                    intencionamos investigar o museu como espaço de criação de narrativas colaborativas com os visitantes.
+                    Na atualidade, é evidente o entrelaçamento da tecnologia em diversos aspectos do cotidiano. Compreendendo essas reflexões, o projeto Conecto é
+                    vinculado ao Museu da Imagem do Som do Ceará (MIS-CE) pela Universidade Federal do Ceará (UFC) com a proposta de elaborar experiências multissensoriais
+                    no espaço do museu que relacionam aspectos subjetivos, evidenciando dramas e dilemas essencialmente humanos para além de enfoques meramente racionais.
+                    Sua equipe é composta por 10 alunos de bacharelado e mestrado dos cursos de Design, Arquitetura e Urbanismo, Sistemas e Mídias Digitais e Cinema e Audiovisual.
                 </BlocoTextoHome>
                 <BlocoTextoHome titulo= {blinking2} img= 'interacaoProjecao' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte}>
-                    Ao se utilizar de diversos recursos tecnológicos como a realidade aumentada, a captação de movimento, 
-                    a captação de som, a projeção, dentre tantos outros, nossa equipe multidisciplinar composta de dez membros dos cursos de design, arquitetura, cinema e sistemas e mídias
-                    digitais almeja criar uma experiência interativa única com os usuários no ambiente museulógico do MIS, mas também fora
-                    dele, levando essas interações para áreas não habituadas a utilizar estas tecnologias"     
+                    Ao se utilizar de diversos recursos tecnológicos como a realidade aumentada, a captação de movimento, a Web, 
+                    a captação de som, a projeção, dentre tantos outros, nossa equipe multidisciplinar 
+                    almeja criar uma experiência interativa única com os usuários no ambiente museulógico do MIS, mas também fora 
+                    dele, levando essas interações para áreas não habituadas a utilizar estas tecnologias.     
                 </BlocoTextoHome>
                 <BlocoTextoHome titulo= "Para Quem?" img= 'procisaoSaoPedro' bgColor= {backgroundColor} tamanhoFonte= {props.tamanhoFonte}>
                     Desde o início, com base na nossa proposta, buscamos alcançar toda as regiões da cidade de Fortaleza, especialmente aquelas em que a população está menos habituados a se utilizar
